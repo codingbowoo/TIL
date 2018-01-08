@@ -36,3 +36,26 @@
 - node
 - ps -eaf |grep node
 * 발표 잘 하기
+
+
+2018-01-02
+* "산출물"
+* 프로젝트?
+* fast follow
+* first moving
+* Scope(Quality), Time(Schedule), Resources
+* Flexibility matrix
+
+
+2018-01-05
+* CI 
+* TDD
+
+
+
+2018-01-08
+* requirements
+* UML
+* Gantt chart
+* 범위, 일정, 비용
+* 전략
