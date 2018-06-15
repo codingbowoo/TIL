@@ -4,6 +4,7 @@
     d차원의 벡터가 있을 때 k(k<d)차원 벡터를 사용하는 함수를 찾는다.
     
 <br>
+
 ###### 도움이 된 링크 정리
 
 [Jeonghun Yoon님의 slideshare - 07.PCA](https://www.slideshare.net/JeonghunYoon/07-pca) <br>
