@@ -3,7 +3,9 @@
 [How to merge 2+ dictionaries](#merge-dicts)
 
 <br/>
+
 * * *
+
 ##### How to merge 2 dictionaries <a id="merge-dicts"></a>
 
 ```python3
