@@ -1,5 +1,3 @@
-## 오늘의 
-
 ### bit Manipulation
 
 1101
@@ -14,4 +12,4 @@
     - signed -> arithmetic
 
 - shift는 [연산 우선순위](http://www.difranco.net/compsci/C_Operator_Precedence_Table.htm)가 쏘 아래여서 ()를 꼭 씌워주자 
-- 
+
