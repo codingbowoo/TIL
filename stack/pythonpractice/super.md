@@ -8,9 +8,14 @@
 ###### 도움이 된 링크
 
 
-(video)[Raymond Hettinger - Super considered super! - PyCon 2015](https://www.youtube.com/watch?v=EiOglTERPEo)<br><br>
-```"Then why are you here?"```<br><br> 그래서 읽은 글 두 편<br>
-[Python's Super is nifty, but you can't use it (Previously: Python's Super Considered Harmful)](https://fuhm.net/super-harmful/)<br>
+(video) [Raymond Hettinger - Super considered super! - PyCon 2015](https://www.youtube.com/watch?v=EiOglTERPEo)
+>"Then why are you here?"
+
+그래서 읽은 글 두 편<br>
+[Python's Super is nifty, but you can't use it (Previously: Python's Super Considered Harmful)](https://fuhm.net/super-harmful/)
+
+>One big problem with 'super' is that it sounds like it will cause the superclass's copy of the method to be called. This is simply not the case, it causes the next method in the MRO to be called.
+
 [Python’s super() considered super!](https://rhettinger.wordpress.com/2011/05/26/super-considered-super/)<br><br>
 
 미리 알고있다면 좋을 것이고 아니더라도 자연스레 찾아보게 될 내용 <br>
