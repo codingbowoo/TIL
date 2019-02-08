@@ -6,7 +6,7 @@
 [today](https://github.com/codingbowoo/codingbowoo-resource/tree/master/today)의 내용은 차차 stack으로 이전할 예정입니다.
 
 잘못된 내용이 있을 경우 [Issues](https://github.com/codingbowoo/codingbowoo-resource/issues/new)로 제보해주세요. <br>
-화면 오른쪽의 Labels에서 ```guestbook```을 선택하여 방명록을 남기셔도 좋습니다.
+ [Issues](https://github.com/codingbowoo/codingbowoo-resource/issues/new)에 방명록을 남기셔도 좋습니다! 반짝반짝한 ```✨guestbook✨``` label을 달아드립니다.
 
 ## Contacts
 
