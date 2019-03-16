@@ -12,3 +12,4 @@
 
 (010) 7105-4870 <br>
 lisabowoo@gmail.com <br>
+bowoojang@sogang.ac.kr <br>
