@@ -14,5 +14,7 @@
 
 
 ###### 도움이 된 링크
+- [Reinforcement Learning: An Introduction 2nd edition](http://incompleteideas.net/book/the-book-2nd.html) : 강화학습 교과서
+- [UCL Course on RL](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) by David Silver(Google DeepMind)
 - [An intro to Advantage Actor Critic methods: let’s play Sonic the Hedgehog!](https://medium.freecodecamp.org/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d)
 by Thomas Simonini
