@@ -12,6 +12,12 @@
 2. Exploration vs. Exploitation
 3. Prediction vs. Control
 
+#### Markov 어쩌구저쩌구
+1. Markov Property
+2. Markov **Reward** Process
+    - Bellman Equation
+3. Markoc **Decision** Process
+
 
 ###### 도움이 된 링크
 - [Reinforcement Learning: An Introduction 2nd edition](http://incompleteideas.net/book/the-book-2nd.html) : 강화학습 교과서
