@@ -23,6 +23,9 @@
 3. Markoc **Decision** Process
     - MRP + Action
     - Policy; a mapping from state to action. a distribution over actions given states.
+    - Bellman Equation for (1) State Value function (2) Action Value function
+        - Bellman **Expectation** Equation
+        - Bellman **Optimality** Equation
 
 
 ###### 도움이 된 링크
