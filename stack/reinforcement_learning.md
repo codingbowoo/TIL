@@ -13,10 +13,16 @@
 3. Prediction vs. Control
 
 #### Markov 어쩌구저쩌구
-1. Markov Property
+1. Markov Property(Markov Chain)
+    - State & State transition probability
 2. Markov **Reward** Process
+    - Markov Chain + Reward function & discounting factor 
+    - Return; Value function (Expectation of the Returns; the env is stochastic)
     - Bellman Equation
+        - iterative expectation
 3. Markoc **Decision** Process
+    - MRP + Action
+    - Policy; a mapping from state to action. a distribution over actions given states.
 
 
 ###### 도움이 된 링크
