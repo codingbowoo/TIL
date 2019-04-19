@@ -27,6 +27,9 @@
         - Bellman **Expectation** Equation
         - Bellman **Optimality** Equation
 
+#### Policy gradient
+- [Policy Based Reinforcement Learning, the Easy Way](https://towardsdatascience.com/policy-based-reinforcement-learning-the-easy-way-8de9a3356083) by Ziad SALLOUM
+    - [Score function with Softmax policy](https://math.stackexchange.com/questions/2013050/log-of-softmax-function-derivative)
 
 ###### 도움이 된 링크
 - [Reinforcement Learning: An Introduction 2nd edition](http://incompleteideas.net/book/the-book-2nd.html) : 강화학습 교과서
