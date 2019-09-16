@@ -11,10 +11,16 @@ fbprophet package를 update 할 필요가 있어 보여서, 어떤 명령어를 
 
 ```anaconda package upgrade``` --> ```conda install "-c" meaning``` --> [```conda-forge```](https://conda-forge.org/docs/)
 
-- ```-c``` option은 channel의 줄임말이다. default channel은 Anaconda Cloud이고, conda-forge는 어떤 channel 이름이다.
+- ```-c``` option은 channel의 줄임말이다. default channel은 ~~Anaconda Cloud~~ https://repo.anaconda.com/pkgs/main/win-64 (이곳인듯 하다/내 경우 win-64 platform임)이고, conda-forge는 어떤 channel 이름이다.
 - 결론은 fbprophet은 conda-forge 채널에서만 다운받을 수 있는 패키지였다는 말씀이다.
 
 ###### 2019-09-16
-지금까지 jupyter notebook 켤 때 GUI 버튼 눌러서 시작했는데... 무려 그것이 예전에 만들어둔 torchenv 환경이었음을 깨달았다. <br>
-fbprophet 사용하는 새로운 가상환경 만들기로... 매번 찾는 것 같아서 기록해둔다.
+지금까지 jupyter notebook 켤 때 GUI 버튼 눌러서 시작했는데... 무려 그것이 예전에 만들어둔 torchenv 환경이었음을 깨달았다.
+결국 fbprophet 사용하는... 새로운 가상환경 만들기로... 매번 찾는 것 같아서 기록해둔다. <br>
 - [Managing environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+
+새로운 환경에 fbprophet을 설치하려고 보니 첫 번째로 해야 할 일은 gcc를 까는 것인듯 했다. 그런데 무려 gcc 패키지가... linux 와 osX 용으로밖에 없는 것이다... 대체 패키지를 찾기 위해선 
+1. 내 플랫폼을 안다
+2. 플랫폼에 맞는 패키지가 있나 https://anaconda.org/ 에서 찾아보고 install!
+
+정도인데, 내 플랫폼을 알려면 ```conda info``` 명령어를 실행해보자. 
