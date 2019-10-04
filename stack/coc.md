@@ -4,6 +4,7 @@
 - [Spoqa Creators](https://github.com/spoqa/code-of-conduct)
 - [WTM Korea](https://wtm-korea-2018.firebaseapp.com/) (사이트 좌측 하단)
 - [PyCon Korea](https://github.com/pythonkr/pycon-code-of-conduct)
+- [Festa! FCOC](https://festa.io/code-of-conduct)
 
 ###### Code of Conduct in English
 - [Coursera](https://learner.coursera.help/hc/en-us/articles/208280036-Coursera-Code-of-Conduct)
