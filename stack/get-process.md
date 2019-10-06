@@ -28,3 +28,7 @@
 
 ###### 트리비아 
 - 2019/10/05 특정 프로세스의 CPU 사용량이 알고 싶었는데 그 내용이 아니었다,, 
+- 2019/10/06 그냥 `작업 관리자`를 확인할 일이었나 싶다 :cry: , <br> 
+Linux에서의 관리는 [리눅스(Linux) 프로세스 관리](https://aonenetworks.tistory.com/644), 
+리눅스 제타위키[리눅스 메모리 사용량순 프로세스 보기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%82%AC%EC%9A%A9%EB%9F%89%EC%88%9C_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EB%B3%B4%EA%B8%B0)
+를 참고하자!
