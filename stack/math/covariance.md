@@ -2,7 +2,7 @@
 
 **공분산** 이라는 이름으로 익숙한 covariance <br>
 
-variance 개념만으로는 한 축의 데이터 (2차원으로 예를 들면 x축과 y축)가 흩뿌려져 있는 모양새만 설명할 수 있어서, <br>
+variance 개념만으로는 한 축의 데이터 (2차원으로 예를 들면 x축과 y축 각각)가 흩뿌려져 있는 모양새만 설명할 수 있어서, <br>
 서로 다른 변수들 사이의 관계(correlation)를 설명하기 위해 공분산이라는 개념을 도입한다. <br><br>
 기존에 알고있던 variance가 퍼짐의 정도(spread)라면, covariance는 방향(orientation)을 나타낸다고 볼 수 있겠다.<br>
 이 두가지를 묶어서 확인할 수 있는 것이 covariance matrix이다. (2변량 이상일 때 사용하고, diagonal line이 variance와 같다.)<br><br>
