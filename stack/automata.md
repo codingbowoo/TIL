@@ -28,6 +28,7 @@
     - Add a guessing capability to FAs - How?
         - Allow δ(q, a) to specify more than one successor state
         - Add ε-transitions, transitions made for free , without consuming any input symbols
+          : add ε to finite alphabet set
     - Languages NFAs recognizes: String w is *accepted* when there is at least one possible accepting end state
 - (Deterministic) FAs vs. Nondeterministic FAs
     - DFAs are special cases of NFAs
@@ -37,6 +38,12 @@
 - Regular Expressions
 
 
+
+#### Resources
+- Introduction to the Theory of Computation, 2nd / 3rd Ed., Sipser, PWS Publishing Co., 2006 / 2013. (S)
+- The Nature of Computation, Moore and Mertens, Oxford University Press, 2011. (M&M)
+- MIT 6.045 (Great Ideas in Theoretical Computer Science) by Prof. Lynch.
+- UCSD CSE105 (Intro. To Computability Theory) by Prof. Israeli.
+
 이번 학기에 오토마타 조교를 하고 있는데 아무래도 기본기가 부족하다 <br>
-내일 읽고 정리할 예정 <br>
 [Automata, languages, and grammars](http://www.nature-of-computation.org/supplements/automata-notes.pdf) by Christopher Moore
