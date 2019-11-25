@@ -1,4 +1,9 @@
-#### ABCDEFGHJIKLM
+#### A
+
+#### B
+- bootstrapping
+
+#### CDEFGHJIKLM
 
 #### N
 - null hypothesis 귀무 가설 H_{0} (H-null, H-zero)
@@ -8,7 +13,17 @@
     - 귀무가설을 참으로 했을 때 확률상 나오기 힘든 결과가 나타나면 
     대립가설(Alternative Hypothesis;귀무가설이 거짓일 경우 대안으로 참이 되는 가설 H_{1})을 채택한다. 
 
-#### OPQRSTUV
+#### OPQ
+
+#### R
+- rejection region (or critical region)
+    - the subset of the sample space, where H_{0} will be rejected
+    - the complement is called the *acceptance region*. 
+
+#### S
+- subsampling
+
+#### TUV
 
 #### W
 - Wald test 월드(왈드) 검정 https://en.wikipedia.org/wiki/Wald_test
