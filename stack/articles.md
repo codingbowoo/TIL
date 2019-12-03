@@ -2,3 +2,40 @@
 
 - [Profiling my Favourite Songs on Spotify through Clustering](https://towardsdatascience.com/profiling-my-favorite-songs-on-spotify-through-clustering-33fee591783d) by John Koh
 - [The Illustrated Word2vec](https://jalammar.github.io/illustrated-word2vec/) by Jay Alammar
+
+# Finance
+- [Python for finance tutorial](https://github.com/datacamp/datacamp-community-tutorials/blob/master/Python%20Finance%20Tutorial%20For%20Beginners/Python%20For%20Finance%20Beginners%20Tutorial.ipynb)
+- [Fama-French Research Portfolios and Factors](https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/research-guides/fama-french-research-portfolios-and-factors/#beme-book-to-market)
+- [FACTOR ALLOCATION 101: EQUAL VS VOLATILITY-WEIGHTED](https://www.factorresearch.com/research-factor-allocation-101-equal-vs-volatility-weighted)
+
+#### Naver D2 Talk
+- 2018.01.16 [금융의 역사를 통해 본 딥러닝의 함정](https://tv.naver.com/v/2557902), 이태영
+- 2018.05.21 [초단타매매 전략 소개 및 트렌드](https://tv.naver.com/v/3255292), 권용진
+- 2018.07.25 [NFL, DL, and Financial Sector](https://tv.naver.com/v/3679080), 이원종
+- 2018.11.21 [금융과 Technology 의 만남 - 로보 어드바이저의 가능성과 한계](https://tv.naver.com/v/4480881), 이주원
+- 2019.03.27 [금융과 딥러닝 - 금융 영역에서의 딥러닝은 어떻게 다른가?](https://tv.naver.com/v/5832425), 문효준
+
+
+# Portfolio
+- [포트폴리오 이론](https://flyinglightly.tistory.com/category/%EC%9E%AC%EC%A0%95%ED%95%99)
+- [Skewness and Kurtosis](https://www.evestment.com/resources/investment-statistics-guide/assessing-skewness-and-kurtosis-in-the-returns-distribution/)
+- [Are the Skewness and Kurtosis Useful Statistics?](https://www.spcforexcel.com/knowledge/basic-statistics/are-skewness-and-kurtosis-useful-statistics)
+- [Measuring portfolio skewness](https://core.ac.uk/download/pdf/4834498.pdf)
+
+
+# ML - tools
+- [Best Python Libraries/Packages for Finance and Financial Data Scientists](https://financetrain.com/best-python-librariespackages-finance-financial-data-scientists/) from FinanceTrain
+- Keras
+- Pytorch
+- Tensorflow
+- [Uber ludwig](https://github.com/uber/ludwig)
+  - [Introduction to Uber’s Ludwig](https://towardsdatascience.com/introduction-to-ubers-ludwig-cdaa67245cfa) by Gilbert Tanner
+
+
+
+# Reinforcement Learning
+- [An intro to Advantage Actor Critic methods: let’s play Sonic the Hedgehog!](https://medium.freecodecamp.org/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d) by Thomas Simonini
+
+# RNN
+- [Taming LSTMs: Variable-sized mini-batches and why PyTorch is good for your health](https://towardsdatascience.com/taming-lstms-variable-sized-mini-batches-and-why-pytorch-is-good-for-your-health-61d35642972e) by William Falcon
+- [Stock Market Prediction by Recurrent Neural Network on LSTM Model](https://blog.usejournal.com/stock-market-prediction-by-recurrent-neural-network-on-lstm-model-56de700bff68) , using Keras by Aniruddha Choudhury
