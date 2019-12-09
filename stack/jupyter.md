@@ -19,6 +19,7 @@ Ipython이라 함은 이 jupyter notebook을 일컫는다. interactive computing
     python -m ipykernel install --user --name (내 가상환경 이름) --display-name "(주피터 노트북에서 확인할 이름)" 
     ```
     명령어를 입력해주면 짜잔. 앞서 언급한 *New ▼* 드롭다운 메뉴 안의 **Notebook:** 선택지에서 내 가상환경 kernel을 확인할 수 있다.
+- prompt에  ```jupyter kernelspec remove (없애고 싶은 커널 이름)``` 또는 ```jupyter kernelspec uninstall (없애고 싶은 커널 이름)``` 명령어를 사용해서 kernel을 없앨 수도 있다. 
     
     
 #### Markdown
