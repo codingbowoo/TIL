@@ -1,9 +1,16 @@
 재미있게 읽은 아티클들 집합소입니다.
 
-- [Profiling my Favourite Songs on Spotify through Clustering](https://towardsdatascience.com/profiling-my-favorite-songs-on-spotify-through-clustering-33fee591783d) by John Koh
-- [The Illustrated Word2vec](https://jalammar.github.io/illustrated-word2vec/) by Jay Alammar
+##### Table of Contents  
+- [Finance](#finance)  
+- [Portfolio](#portfolio)
+- Machine Learning - [examples](#ml-examples) | [tools](#ml-tools)
+- [Natural Language Processing](#nlp)
+- [Python](#python)
+- [Reinforcement Learning](#reinforcement-learning)
+- [RNN](#rnn)
 
-# Finance
+* * *
+## Finance
 - [Python for finance tutorial](https://github.com/datacamp/datacamp-community-tutorials/blob/master/Python%20Finance%20Tutorial%20For%20Beginners/Python%20For%20Finance%20Beginners%20Tutorial.ipynb)
 - [Fama-French Research Portfolios and Factors](https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/research-guides/fama-french-research-portfolios-and-factors/#beme-book-to-market)
 - [FACTOR ALLOCATION 101: EQUAL VS VOLATILITY-WEIGHTED](https://www.factorresearch.com/research-factor-allocation-101-equal-vs-volatility-weighted)
@@ -15,15 +22,10 @@
 - 2018.11.21 [금융과 Technology 의 만남 - 로보 어드바이저의 가능성과 한계](https://tv.naver.com/v/4480881), 이주원
 - 2019.03.27 [금융과 딥러닝 - 금융 영역에서의 딥러닝은 어떻게 다른가?](https://tv.naver.com/v/5832425), 문효준
 
+# ML-examples
+- [Profiling my Favourite Songs on Spotify through Clustering](https://towardsdatascience.com/profiling-my-favorite-songs-on-spotify-through-clustering-33fee591783d) by John Koh
 
-# Portfolio
-- [포트폴리오 이론](https://flyinglightly.tistory.com/category/%EC%9E%AC%EC%A0%95%ED%95%99)
-- [Skewness and Kurtosis](https://www.evestment.com/resources/investment-statistics-guide/assessing-skewness-and-kurtosis-in-the-returns-distribution/)
-- [Are the Skewness and Kurtosis Useful Statistics?](https://www.spcforexcel.com/knowledge/basic-statistics/are-skewness-and-kurtosis-useful-statistics)
-- [Measuring portfolio skewness](https://core.ac.uk/download/pdf/4834498.pdf)
-
-
-# ML - tools
+# ML-tools
 - [Best Python Libraries/Packages for Finance and Financial Data Scientists](https://financetrain.com/best-python-librariespackages-finance-financial-data-scientists/) from FinanceTrain
 - Keras
 - Pytorch
@@ -31,6 +33,17 @@
 - [Uber ludwig](https://github.com/uber/ludwig)
   - [Introduction to Uber’s Ludwig](https://towardsdatascience.com/introduction-to-ubers-ludwig-cdaa67245cfa) by Gilbert Tanner
 
+# NLP
+- [The Illustrated Word2vec](https://jalammar.github.io/illustrated-word2vec/) by Jay Alammar
+
+# Portfolio
+- [포트폴리오 이론](https://flyinglightly.tistory.com/category/%EC%9E%AC%EC%A0%95%ED%95%99)
+- [Skewness and Kurtosis](https://www.evestment.com/resources/investment-statistics-guide/assessing-skewness-and-kurtosis-in-the-returns-distribution/)
+- [Are the Skewness and Kurtosis Useful Statistics?](https://www.spcforexcel.com/knowledge/basic-statistics/are-skewness-and-kurtosis-useful-statistics)
+- [Measuring portfolio skewness](https://core.ac.uk/download/pdf/4834498.pdf)
+
+# Python
+- [Minimally Sufficient Pandas](https://medium.com/dunder-data/minimally-sufficient-pandas-a8e67f2a2428)
 
 
 # Reinforcement Learning
