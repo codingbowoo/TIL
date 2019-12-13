@@ -1,4 +1,4 @@
-재미있게 읽은 아티클들 집합소입니다.
+재미있게 읽은 아티클과 한(!)줄 덧글 집합소입니다.
 
 ##### Table of Contents  
 - [Finance](#finance)  
@@ -43,7 +43,8 @@
 - [Measuring portfolio skewness](https://core.ac.uk/download/pdf/4834498.pdf)
 
 ## Python
-- [Minimally Sufficient Pandas](https://medium.com/dunder-data/minimally-sufficient-pandas-a8e67f2a2428)
+- [Minimally Sufficient Pandas](https://medium.com/dunder-data/minimally-sufficient-pandas-a8e67f2a2428) <br>
+: 여러 topic 중 ```Builtin Python functions vs Pandas methods with the same name```에 문제의식을 가진 것 만으로도 흥미로왔다..
 
 
 ## Reinforcement Learning
