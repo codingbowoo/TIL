@@ -23,6 +23,16 @@ type
 +) 내가 새로운 class를 만들어서, 예를 들어 pandas의 DataFrame을 상속하는 myDataFrame을 생성했다고 하자. <br>
 내가 생성한 myDataFrame은 DataFrame과 동일한 성질을 가진다. (어떤 메타클래스의 instance이다.)
 
+클래스 정의에 지정된 키워드 인수들arguments은 아래 메타클래스 작업을 거친다. 
+
+1. MRO(Method Resolution Order) 결정 <br>
+   : ```클래스이름.mro()``` 또는 ```클래스이름.__mro__```로 현재 클래스의 메소드 탐색 순서를 확인할 수 있다.
+2. Metaclass 결정 <br>
+   : 일반적으로 ```object```
+3. class namespace 준비
+4. class body 실행
+
+
 * * *
 위 [reursionlimit](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/pythonpractice/recursionlimit.md) 문서에서의 문제 상황을 다시 살펴보자.
 ```python3
