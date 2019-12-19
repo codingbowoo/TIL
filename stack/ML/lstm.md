@@ -41,6 +41,32 @@ A. 내가 다루는 금융 데이터도 시계열적인 특징이 있지.
 
 - 파이토치 튜토리얼 [SEQUENCE MODELS AND LONG-SHORT TERM MEMORY NETWORKS](https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html)
 
+가장 기본적인 LSTM cell 하나는 아래처럼 사용할 수 있다. 
+```python3
+import torch
+import torch.nn as nn
+
+lstm = nn.LSTM()
+```
+
+일반적으로 아래처럼 class를 만들어서 사용한다. 
+```python3
+class LSTM(nn.Module):
+    def __init__(self, input_size=1, hidden_layer_size=100, output_size=1):
+        super().__init__()
+        self.hidden_layer_size = hidden_layer_size
+        self.lstm = nn.LSTM(input_size, hidden_layer_size)
+        self.linear = nn.Linear(hidden_layer_size, output_size)
+        self.hidden_cell = (torch.zeros(1,1,self.hidden_layer_size),
+                            torch.zeros(1,1,self.hidden_layer_size))
+
+    def forward(self, input_seq):
+        lstm_out, self.hidden_cell = self.lstm(input_seq.view(len(input_seq) ,1, -1), self.hidden_cell)
+        predictions = self.linear(lstm_out.view(len(input_seq), -1))
+        return predictions[-1]
+```
+
+
 #### Stacked LSTM
 
 - LSTM을 쌓은 구조. 한 층의 결과값을 위 층의 input으로 사용하자.
