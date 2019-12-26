@@ -1,10 +1,10 @@
 # NP
 
 ```
-A decision problem* is in NP if, whenever the answer for a particular instance is 
+A decision problem^ is in NP if, whenever the answer for a particular instance is 
 "yes", there is a simple proof of this fact.
 ```
-\* decision problem : yes-no로 대답할 수 있는 문제
+\^ decision problem : yes-no로 대답할 수 있는 문제
 
 NP문제는 polynomial time 해법을 모르지만 yes instance가 주어질 때 그것이 맞는지는 간단하게(P time에) 확인할 수 있는 문제이다. 
 
@@ -12,12 +12,12 @@ NP문제는 polynomial time 해법을 모르지만 yes instance가 주어질 때
 
 ## NP의 공식적인 정의
 
-NP is the class of problems A of the folloing form:
+NP is the class of problems A of the following form:
 ```
 x is a yes-instance of A if and only if there exists a w such 
 that (x, w) is a yes-instance of B,
 
-where B is a decidion problem in P regarding pairs (x, w),
-|w|* = poly(|x|), and |.| is the number of bits to represent.
+where B is a decision problem in P regarding pairs (x, w),
+|w^| = poly(|x|), and |.| is the number of bits to represent.
 ```
-\* w : *witness* or the *certificate* of the fact that x is a yes-instance of A.
+\^ w : *witness* or the *certificate* of the fact that x is a yes-instance of A.
