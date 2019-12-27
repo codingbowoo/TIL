@@ -8,4 +8,4 @@
     
 3. [Data Science at the Command Line](https://www.datascienceatthecommandline.com/) by Jeroen Janssens
 
-4.[Elements of AI](https://www.elementsofai.com/): a series of free online courses created by Reaktor and the University of Helsinki.
+4. [Elements of AI](https://www.elementsofai.com/): a series of free online courses created by Reaktor and the University of Helsinki.
