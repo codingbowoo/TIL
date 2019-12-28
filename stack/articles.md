@@ -13,7 +13,7 @@
 * * *
 ## Diversity
 - [A Nude ‘Playboy’ Photo Has Been a Mainstay in Testing Tech for Decades](https://onezero.medium.com/a-nude-playboy-photo-has-been-a-mainstay-in-testing-tech-for-decades-b8cdb434dce1) by [Corinne Purtill](https://onezero.medium.com/@corinnepurtill)
-    - Lena Söderberg씨도 비록 아주 나중이지만 이미지가 사용되고 있다는 사실을 알고 흔쾌히 사용을 허락했다고 한다. 그러나 해당 기사가 지적하는 부분은, 해당 이미지에 국한된 이야기가 아닌 업계 전반의 다양성 부재-의도치 않은 배제의 문화라고 생각한다. 번역해볼까 싶은 글.  
+    - Lena Söderberg씨의 플레이보이 사진이 이미지 프로세싱할 때 많이 쓰이는 것과 관련한 이야기. CODE LIKE A GIRL에서 시작한 [Losing Lena](https://vimeo.com/372265771)영상도 보자. 아티클에서는 해당 이미지에 국한된 이야기가 아닌 업계 전반의 다양성 부재-의도치 않은 배제의 문화를 지적한다. 번역해볼까 싶은 글.  
     
 
 ## Finance
