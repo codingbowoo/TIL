@@ -13,7 +13,7 @@
 * * *
 ## Diversity
 - [A Nude ‘Playboy’ Photo Has Been a Mainstay in Testing Tech for Decades](https://onezero.medium.com/a-nude-playboy-photo-has-been-a-mainstay-in-testing-tech-for-decades-b8cdb434dce1) by [Corinne Purtill](https://onezero.medium.com/@corinnepurtill)
-    - Lena Söderberg씨도 비록 아주 나중이지만 이미지가 사용되고 있다는 사실을 알고 흔쾌히 사용을 허락했다고 한다. 그러나 해당 기사가 지적하는 부분은, 해당 이미지에 국한된 이야기가 아닌 업계 전반의 다양성 부재-의도치 않은 배제의 문화라고 생각한다. 번역해볼까 싶은 글. [The Lenna Story](http://www.lenna.org/)에서 Lena씨 사진과 얽힌 이야기를 볼 수 있다. (그러나 ```Don't forget to check out Lenna's birthday page (3/31) and playmate directory page at Playboy. (Warning: contains nudity.)``` 따위의 문구가 있는 등, lena씨가 사진의 사용을 알고 있는 것과 별개로 여성을 성적으로 소비하는 맥락에 있기 때문에 불쾌할 수 있다.) 
+    - Lena Söderberg씨도 비록 아주 나중이지만 이미지가 사용되고 있다는 사실을 알고 흔쾌히 사용을 허락했다고 한다. 그러나 해당 기사가 지적하는 부분은, 해당 이미지에 국한된 이야기가 아닌 업계 전반의 다양성 부재-의도치 않은 배제의 문화라고 생각한다. 번역해볼까 싶은 글.  
     
 
 ## Finance
