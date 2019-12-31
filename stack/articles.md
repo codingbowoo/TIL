@@ -1,6 +1,7 @@
 재미있게 읽은 아티클과 한(!)줄 덧글 집합소입니다.
 
 ##### Table of Contents  
+- [Career](#career)
 - [Diversity](#diversity)
 - [Finance](#finance)  
 - [Portfolio](#portfolio)
@@ -11,6 +12,12 @@
 - [RNN](#rnn)
 
 * * *
+## Career
+- [I had no idea how to write code two years ago. Now I’m an AI engineer.](https://towardsdatascience.com/i-had-no-idea-how-to-write-code-two-years-ago-now-im-an-ai-engineer-13c530ab8227) by David Chong
+    > If you’re feeling lost, remember what Elsa said and “do the next right thing”.
+    
+    경제금융을 전공한 David Chong씨가 AI엔지니어가 되기까지의 이야기이다. MOOC으로 수강을 하면 생각보다 섬세하게 배울 수 없다는 것을 깨달았다는 부분이 와닿았고, 스스로 프로젝트를 하고 대학원에 진학하는 등의 과정이 담겨 있다. (do the next right thing은 사실 안나가 부른 노래다)
+
 ## Diversity
 - [A Nude ‘Playboy’ Photo Has Been a Mainstay in Testing Tech for Decades](https://onezero.medium.com/a-nude-playboy-photo-has-been-a-mainstay-in-testing-tech-for-decades-b8cdb434dce1) by [Corinne Purtill](https://onezero.medium.com/@corinnepurtill)
     - Lena Söderberg씨의 플레이보이 사진이 이미지 프로세싱할 때 많이 쓰이는 것과 관련한 이야기. CODE LIKE A GIRL에서 시작한 [Losing Lena](https://vimeo.com/372265771)영상도 보자. 아티클에서는 해당 이미지에 국한된 이야기가 아닌 업계 전반의 다양성 부재-의도치 않은 배제의 문화를 지적한다. 번역해볼까 싶은 글.  
