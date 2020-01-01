@@ -1,6 +1,8 @@
 # 정말 하고 싶은데 너무 하기 싫어
 
-2019.12.27 - 2019.12.30
+> 몸은 '해야 한다'는 말에 반응하지 않는다!
+
+2019.12.27 - 2020.01.02
 
 네이버 책 [정말 하고 싶은데 **너무 하기 싫어**](https://book.naver.com/bookdb/book_detail.nhn?bid=14457868) <br>
 (원제: 중독, 미루기, 게으름 ADDICTION, PROCRASTINATION, AND LAZINESS)
