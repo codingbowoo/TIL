@@ -5,14 +5,19 @@ parameter를 정할 때 genetic algorithm을 사용할 것을 권유 받았다.
 
 ## Part I Foundations
 #### 1 Introduction
-1.1 Optimization
-1.2 From Biology to Genetic Algorithms
-1.3 Genetic Algorithm Variants
-1.4 Related Optimization Heuristics
-1.5 This Book
-1.6 Further Remarks
+> Q. 근데 genetic algorithm 왜 쓰는 거예요? <br>
+A. 최적화 문제Optimization 풀려구요!
+
+- 유전 알고리즘은 heuristic의 대표적인 예다. 외판원 문제traveling salesman problem와 같은 P-time 해법이 없는 문제의 경우 [heuristic](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/heuristic.md)을 통해 최적을 찾는다. (기존 최적화 방법들이 제약 조건이나 가변성, 노이즈 등으로 인해 효과가 떨어질 때 사용한다)
+- 유전 알고리즘은 아래 진행을 반복한다.<br>
+**```초기화initialization```-```교차crossover```-```변이mutation```-```적합성 판단fitness```-```선택selection```-```종료termination```**
+- 교차와 변이에 관련된 다양한 변주가 있다.
+- 유전 알고리즘과 비슷한 heuristic의 예로는 swarm intelligence(explorative),  ant colony optimization(exploitation), fireworks algorithms(balanced), firefly algorithm 등이 있다. 
+- keywords: ```genetic algorithms```, ```selection```, ```mutation rates```, ```multi-objective```, ```fitness-based partitions```, ```multimodal```, ```evolution strategies```, ```1/5th success rule```, ```recombination```, ```mutation```, ```constraint handling```
 
 #### 2 Genetic Algorithms 
+> KEYWORDS> populations, the generational scheme, crossover, mutation, selection, genotype-phenotype mapping, termination conditions
+
 2.1 Introduction 
 2.2 Basic Genetic Algorithm
 2.3 Crossover
@@ -25,6 +30,8 @@ parameter를 정할 때 genetic algorithm을 사용할 것을 권유 받았다.
 2.10 Summary 
 
 #### 3 Parameters
+> KEYWORDS> tuning and control of genetic algorithms parameters, dynamic control, Rechenberg's mutation rate control, self-adaptation
+
 3.1 Introduction 
 3.2 Parameter Tuning 
 3.3 Meta-Genetic Algorithm 
@@ -35,6 +42,8 @@ parameter를 정할 때 genetic algorithm을 사용할 것을 권유 받았다.
 
 ## Part II Solution Spaces
 #### 4 Multimodality 
+> KEYWORDS> overcoming local optima, restarts, niching, fitness sharing, novelty search
+
 4.1 Introduction 
 4.2 Restarts
 4.3 Fitness Sharing 
@@ -43,6 +52,8 @@ parameter를 정할 때 genetic algorithm을 사용할 것을 권유 받았다.
 4.6 Summary 
 
 #### 5 Constraints
+> KEYWORDS> constaint handling, penalty functions
+
 5.1 Introduction 
 5.2 Constraints 
 5.3 Death Penalty 
@@ -53,6 +64,8 @@ parameter를 정할 때 genetic algorithm을 사용할 것을 권유 받았다.
 5.8 Summary 
 
 #### 6 Multiple Objectives 
+> KEYWORDS> multi-objective optimization approaches, non-dominating sorting, rake selection, selection based on the hypervolume indicator
+
 6.1 Introduction 
 6.2 Multi-objective Optimization 
 6.3 Non-dominated Sorting
@@ -63,6 +76,8 @@ parameter를 정할 때 genetic algorithm을 사용할 것을 권유 받았다.
 
 ## Part III Advanced Concepts
 #### 7 Theory 
+> KEYWORDS> theoretical research, runtime analysis
+
 7.1 Introduction 
 7.2 Runtime Analysis 
 7.3 Markov Chains
@@ -73,11 +88,12 @@ parameter를 정할 때 genetic algorithm을 사용할 것을 권유 받았다.
 7.8 Summary 
 
 #### 8 Machine Learning 
+> KEYWORDS> machine learning, covariance matrix estimation, meta-modeling, visualization
+
 8.1 Introduction 
 8.2 Covariance Matrix Estimation
 8.3 Fitness Surrogates
 8.4 Constraint Surrogates 
-vi Contents
 8.5 Dimensionality Reduction for Visualization 
 8.6 Summary 
 
