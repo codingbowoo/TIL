@@ -5,7 +5,7 @@
 - [Diversity](#diversity)
 - [Finance](#finance)  
 - [Portfolio](#portfolio)
-- Machine Learning - [examples](#ml-examples) | [tools](#ml-tools)
+- Machine Learning - [basics](#ml-basics) | [examples](#ml-examples) | [tools](#ml-tools)
 - [Natural Language Processing](#nlp)
 - [Python](#python)
 - [Reinforcement Learning](#reinforcement-learning)
@@ -34,6 +34,11 @@
 - 2018.07.25 [NFL, DL, and Financial Sector](https://tv.naver.com/v/3679080), 이원종
 - 2018.11.21 [금융과 Technology 의 만남 - 로보 어드바이저의 가능성과 한계](https://tv.naver.com/v/4480881), 이주원
 - 2019.03.27 [금융과 딥러닝 - 금융 영역에서의 딥러닝은 어떻게 다른가?](https://tv.naver.com/v/5832425), 문효준
+
+## ML-basics
+- 수아랩 리서치 블로그 [머신러닝이란 무엇인가?](https://research.sualab.com/introduction/2017/09/04/what-is-machine-learning.html)
+- 수아랩 리서치 블로그 딥러닝이란 무엇인가? [(1)](http://research.sualab.com/introduction/2017/10/10/what-is-deep-learning-1.html) [(2)](https://research.sualab.com/introduction/2017/10/10/what-is-deep-learning-2.html)
+    - 머신러닝, 딥러닝 개념을 설명하는 글 중 가장 이해하기 쉬웠다.
 
 ## ML-examples
 - [Profiling my Favourite Songs on Spotify through Clustering](https://towardsdatascience.com/profiling-my-favorite-songs-on-spotify-through-clustering-33fee591783d) by John Koh
