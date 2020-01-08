@@ -1,7 +1,8 @@
 # genetic algorithm
 
 parameter를 정할 때 genetic algorithm을 사용할 것을 권유 받았다.
-그렇지만.. 내가 아는 것은 이름 뿐.... [Genetic Algorithm Essentials](https://link.springer.com/book/10.1007%2F978-3-319-52156-5) 를 읽으며 정리해보려 한다.
+그렇지만.. 내가 아는 것은 이름 뿐.... **[Genetic Algorithm Essentials](https://link.springer.com/book/10.1007%2F978-3-319-52156-5) 를 읽으며 정리해보려 한다.** ( 빠르게 내용을 훑고 싶은 사람은
+[최적화기법으로서의 유전알고리즘과 그 응용](http://www.ndsl.kr/ndsl/commons/util/ndslOriginalView.do?dbt=JAKO&cn=JAKO199711919927852&oCn=JAKO199711919927852&pageCode=PG11&journal=NJOU00290606)이라는 한국어 논문이 있으니 가볍게 읽어보면 좋다 )
 
 ## Part I Foundations
 #### 1 Introduction
