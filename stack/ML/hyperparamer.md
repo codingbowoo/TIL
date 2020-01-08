@@ -37,7 +37,7 @@
 | rnn_decoder_state_init | last, avg,  zero | last |
 | rnn_first_residual_layer | 첫 번째 rnn residual layer(num_layers_decoder>=2 일 때만) | 2 |
 | rnn_num_hidden | 인코더 및 디코더 rnn의 hidden unit 수(2의 배수 because of Bidirectional LSTM) | 1024 |
-| rnn_residual_connections | rnn 의 resicual connection 여부 | false |
+| rnn_residual_connections | rnn 의 residual connection 여부 | false |
 | rnn_decoder_hidden_dropout | context- decoder rnn hidden state 사이의 dropout rate | 0 |
 | training_metric | validation data의 평가: perplexity, accuracy | perplexity |
 | weight_decay | weight decay 상수 | 0 |
