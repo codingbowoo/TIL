@@ -1,7 +1,7 @@
 # genetic algorithm
 
 parameter를 정할 때 genetic algorithm을 사용할 것을 권유 받았다.
-그렇지만.. 내가 아는 것은 이름 뿐.... **[Genetic Algorithm Essentials](https://link.springer.com/book/10.1007%2F978-3-319-52156-5) 를 읽으며 정리해보려 한다.** ( 빠르게 내용을 훑고 싶은 사람은
+그렇지만.. 내가 아는 것은 이름 뿐.... **[Genetic Algorithm Essentials](https://link.springer.com/book/10.1007%2F978-3-319-52156-5) 를 읽으며 정리해보려 한다.** ( 빠르게 내용을 훑고 싶은 사람은 무려 1997년도에 쓰인(...) 
 [최적화기법으로서의 유전알고리즘과 그 응용](http://www.ndsl.kr/ndsl/commons/util/ndslOriginalView.do?dbt=JAKO&cn=JAKO199711919927852&oCn=JAKO199711919927852&pageCode=PG11&journal=NJOU00290606)이라는 한국어 논문이 있으니 가볍게 읽어보면 좋다 )
 
 ## Part I Foundations
@@ -19,13 +19,35 @@ A. 최적화 문제Optimization 풀려구요!
 #### 2 Genetic Algorithms 
 > KEYWORDS> populations, the generational scheme, crossover, mutation, selection, genotype-phenotype mapping, termination conditions
 
-2.1 Introduction 
-2.2 Basic Genetic Algorithm
-2.3 Crossover
-2.4 Mutation
+- 유전 알고리즘은 넓은 범주의 최적화 문제에 적용 가능하다. 이 때, 가장 핵심이 되는 것은 **진화evolution**(점진적 발전)이다.
+- 고전적인 유전 알고리즘에서 그 해solution는 최적화 문제의 '최적', 이 때의 초기 해 집합이 population이다.
+    - 유전 알고리즘에서는 해를 encode하는데, 이 encode 한 것을 표현representation이라고 부른다. (혹은 유전형genotype, 염색체chromosome이라고도 한다.)
+    - 표현은 이산적일 경우 string, 연속적인 경우 vector라고 부른다.
+- 기본이 되는 유전 알고리즘의 구조는 아래와 같다.
+    ```pseudocode
+    initialize population : 초기화 할 때는 전체 해 공간solution space을 아우르는 것이 좋다. 
+    repeat
+        repeat
+            crossover
+            mutation
+            phenotype mapping
+            fitness computtion
+        until population complete
+        selection of parental population
+    until termination condition
+    ```
+- **교차crossover**는 부모 유전자를 쪼개서 맞교환 하는 방식이다. vector인 경우 부모의 중간값을 취하는 arithmetic crossover(intermediate)를 사용하기도 한다.
+    - 그 외에도 Dominant crossover, Uniform crossover등 여러 방식이 있지만 많은 유전 알고리즘이 단순히 부모로부터 일정한 확률로 유전자를 가지고 온다.
+- 한편 임의로 변화를 주는 **변이mutation**라고 한다. 일정한 확률mutation rate에 따라 교란disturbance을 일으킨다.
+- 변이 연산자mutation operator를 정하는 데는 세 가지 원칙이 있다. reachability, unbiasedness, scalability가 그것이다.
+    - ```도달 가능성reachability```: 변이를 줄 때도 전체 해 공간을 아울러야 한다.
+    - ```비편향성unbiasedness```: 편향을 지양하되, 제약조건이 있을 경우 bias를 두는 것이 효과적일 수 있다.
+    - ```확장성scalability```: 각 변이 연산자는 degree of freedom을 보장해야 한다. 일례로 Gaussian mutation은 Gaussian 분포를 기반으로 전체 해공간에서 임의의 표본을 뽑는다.
+
 2.5 Genotype-Phenotype Mapping 
 2.6 Fitness 
-2.7 Selection
+**2.7 Selection**
+
 2.8 Termination 
 2.9 Experiments 
 2.10 Summary 
