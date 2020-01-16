@@ -42,23 +42,36 @@ A. 내가 다루는 금융 데이터도 시계열적인 특징이 있지.
 - 파이토치 튜토리얼 [SEQUENCE MODELS AND LONG-SHORT TERM MEMORY NETWORKS](https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html)
 
 가장 기본적인 LSTM cell 하나는 아래처럼 사용할 수 있다. 
+LSTM과 관련한 파이토치 문서는 [여기](https://pytorch.org/docs/stable/nn.html#lstm)를 참고하자.
 ```python3
 import torch
 import torch.nn as nn
 
-lstm = nn.LSTM()
+lstm = nn.LSTM(10, 10, 2)
+
+_input = torch.randn(5, 3, 10)
+h0 = torch.randn(2, 3, 20)
+c0 = torch.randn(2, 3, 20)
+
+output, (h_n, c_n) = lstm(_input, (h_0, c_0))
 ```
 
 일반적으로 아래처럼 class를 만들어서 사용한다. 
+아래 예시는 output을 만들 때 Fully connected(nn.Linear)
 ```python3
 class LSTM(nn.Module):
-    def __init__(self, input_size=1, hidden_layer_size=100, output_size=1):
+    def __init__(self, input_size=1, hidden_size=100, output_size=1):
         super().__init__()
-        self.hidden_layer_size = hidden_layer_size
-        self.lstm = nn.LSTM(input_size, hidden_layer_size)
-        self.linear = nn.Linear(hidden_layer_size, output_size)
-        self.hidden_cell = (torch.zeros(1,1,self.hidden_layer_size),
-                            torch.zeros(1,1,self.hidden_layer_size))
+        self.hidden_size = hidden_size
+        
+        # torch.nn.LSTM(*args, **kwargs)
+        self.lstm = nn.LSTM(input_size, hidden_size)
+        
+        #torch.nn.Linear(in_features, out_features, bias=True)
+        self.linear = nn.Linear(hidden_size, output_size) 
+        
+        self.hidden_cell = (torch.zeros(1,1,self.hidden_size),
+                            torch.zeros(1,1,self.hidden_size)) # (h_0, c_0)
 
     def forward(self, input_seq):
         lstm_out, self.hidden_cell = self.lstm(input_seq.view(len(input_seq) ,1, -1), self.hidden_cell)
