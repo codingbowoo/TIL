@@ -1,12 +1,16 @@
 # DEEP LEARNING WITH PYTORCH
 
-[DEEP LEARNING WITH PYTORCH](https://pytorch.org/deep-learning-with-pytorch) 책을 통해 정리하는 파이토치 기초
+[DEEP LEARNING WITH PYTORCH](https://pytorch.org/deep-learning-with-pytorch) 책을 통해 정리하는 파이토치 **딥러닝** 기초 <br>
+https://github.com/deep-learning-with-pytorch/dlwpt-code 도 참고하자.
 
 ## 1 Introducing deep learning and the PyTorch library
-1.1 What is PyTorch? 2
-1.2 What is this book? 2
-1.3 Why PyTorch? 3
-1.4 PyTorch has the batteries included 10
+- Pytorch의 핵심 자료구조는 **Tensor** : numpy array와 비슷한 다차원 배열
+    - 거의 비슷하지만 GPU 가속, autograd 등의 추가적인 기능 제공
+- 책에서 주로 다루는 예제는 2D, 3D 데이터에 대한 이미지 프로세싱 (이런)
+- DEEP LEARNING: NO MORE HANDCRAFTED FEATURES
+    - but operating on a mathematical entity so that it discovers representations from the training dta autonomously
+- 너무 당당하게 내가 처음으로 배워야 할 딥러닝 라이브러리가 PyTorch라고 쓰여 있음. 매력적인걸?
+- 자세한 내용은 앞서 정리한 [pytorch 문서](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/ML/pytorch.md) 참고
 
 ## 2 It starts with a tensor
 2.1 Tensor fundamentals 18
