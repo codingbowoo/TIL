@@ -13,6 +13,12 @@ https://github.com/deep-learning-with-pytorch/dlwpt-code 도 참고하자.
 - 자세한 내용은 앞서 정리한 [pytorch 문서](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/ML/pytorch.md) 참고
 
 ## 2 It starts with a tensor
+- 딥러닝은 결국 여러 단계의 representation에 대한 이야기: PyTorch는 데이터를 어떻게 처리하고 저장할까?
+- 다시 한 번, PyTorch의 핵심 자료구조는 **Tensor** : numpy array와 비슷한 다차원 배열
+- PyTorch tensor의 indexing과 operating
+- NumPy 다차원배열과 함께 사용하기
+- GPU에서 사용하기 
+
 2.1 Tensor fundamentals 18
 2.2 Tensors and storages 22
 2.3 Size, storage offset, and strides 24
