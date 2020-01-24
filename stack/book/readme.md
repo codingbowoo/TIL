@@ -1,8 +1,12 @@
 읽은 책을 정리해두는 공간
 
-### ㄱㄴㄷㄹㅁㅂㅅ
+### ㄱㄴㄷㄹㅁㅂ
+
+### ㅅ
+- [실전 퀀트투자](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/book/quantitative_investment.md) | 홍용찬 | 이레미디어
 
 ###  ㅇ
+- [왜 일하는가](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/book/hataraki_kata.md) | 이나모리 가즈오, 신정길 옮김 | 도서출판 서돌 
 - [이러지도 저러지도 못하는 당신에게](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/book/this_or_that.md) | 강주원 | 비로소
 
 ### ㅈ
