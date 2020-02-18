@@ -3,7 +3,7 @@
 ### ㄱㄴㄷㄹ
 
 ### ㅁ
-- [매일 의존하며 살아갑니다](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/book/series_care.md) | 도하타 가이토, 김영현 옮김 | 다다서재
+- [매일 의존하며 살아갑니다](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/book/care_therapy.md) | 도하타 가이토, 김영현 옮김 | 다다서재
 ### ㅂ
 ### ㅅ
 - [실전 퀀트투자](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/book/quantitative_investment.md) | 홍용찬 | 이레미디어
