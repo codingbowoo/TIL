@@ -1,13 +1,17 @@
 ## Smart beta
-> passive investing(주로 buy and hold)과 active investing 의 장점을 결합한 투자 전략
+> passive investing(buy and hold)과 active investing 의 장점을 결합한 투자 전략
 
 smart beta의 목적은 전통적인 active management보다는 낮은, straight index investing보다는 높은 비용으로 
 
-1. [alpha](https://www.investopedia.com/terms/a/alpha.asp)를 얻는 것.
+1. [alpha](https://www.investopedia.com/terms/a/alpha.asp)를 얻는 것 (이 때 알파는 간단히 말하면 초과수익)
 2. risk를 낮추는 것
-3. 포트폴리오 다각화(diversification)
+3. 포트폴리오 다각화diversification (소형주, 가치주 등 여러 팩터를 결합)
 
 하는 것이다. 
+
+
+장기적으로 주가지수 이상의 성과를 낼 수 있는 매우 체계적(rule-based)이고 투명한 운용 방식이다.
+
 
 사실상 smart beta는 
 
@@ -24,15 +28,13 @@ smart beta의 목적은 전통적인 active management보다는 낮은, straight
 smart beta는
 
 1. 전통적인 시가총액 기반 지수 대신 새로운 index 구성 방식을 사용하는 일련의 투자 전략을 말한다.
-2. 투명하고 규칙 기반인 방법으로 투자요소 혹은 시장 비효율성을 잡아낼 것을 강조한다.
-3. 인기가 높은데, 그 이유를 NASDAQ, S&P, KOSPI와 같은 시가총액가중지수Capitalization-weighted index에 대한 risk-adjust된 수익률 개선 뿐만 아니라, 
-포트폴리오 위험관리와 요소factor 차원에서의 다각화에 대한 요구와 연관지을 수 있다.
-4. 스마트 베타는 위 시가총액가중지수를 수동적으로 따르기도 하고, 
-변동성volatility, 유동성liquidity, 퀄리티quality, 가치value, 규모size, 모멘텀momentum 등의 가중치 체계 역시 고려한다. 
-(전통적인 지수에 구애받기보다는 새로운 가중치를 고려하는데 집중한다.)
+2. 규칙 기반으로 펀드매니저늬 주관적 판단이 개입하지 않으며 체계적이고 투명하며, 이를 통해 투자요소 혹은 시장 비효율성을 잡아낼 것을 강조한다.
+3. 장기적으로 투자할 경우 큰 손실을 피하고자 한다. NASDAQ, S&P, KOSPI와 같은 시가총액가중지수Capitalization-weighted index에 대한 risk-adjust된 수익률 개선을 꾀한다.
+4. 스마트 베타는 요소factor 차원에서의 다각화에 대한 요구와 연관지을 수 있다. 변동성volatility, 유동성liquidity, 퀄리티quality, 가치value, 규모size, 모멘텀momentum 등 다양한 가중치 체계에 노출함에 따른 다각화 전략을 꾀한다. (전통적인 지수에 구애받기보다는 새로운 가중치를 고려하는데 집중한다.)
 
 
 ###### References
 - [Smart beta](https://www.investopedia.com/terms/s/smart-beta.asp) from Investopedia
 - https://en.m.wikipedia.org/wiki/Capitalization-weighted_index
 - [확실한 요소를 기반으로 결정해 투자하는 ‘팩터 투자’란?](https://m.post.naver.com/viewer/postView.nhn?volumeNo=16340445&memberNo=2993146) 네이버포스트
+- [감정을 이기는 퀀트투자 스마트 베타: 퀀트 펀드매니저가 쓴 계량투자 입문서 현명한 베타를 통한 알파 추구](https://book.naver.com/bookdb/book_detail.nhn?bid=12722739), 김병규 , 이현열WATER BEAR PRESS(워터베어프레스)
