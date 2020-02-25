@@ -10,3 +10,5 @@
 - [Are the Skewness and Kurtosis Useful Statistics?](https://www.spcforexcel.com/knowledge/basic-statistics/are-skewness-and-kurtosis-useful-statistics)
 - [Measuring portfolio skewness](https://core.ac.uk/download/pdf/4834498.pdf)
 
+## 책
+- [감정을 이기는 퀀트투자 스마트 베타: 퀀트 펀드매니저가 쓴 계량투자 입문서 현명한 베타를 통한 알파 추구](https://book.naver.com/bookdb/book_detail.nhn?bid=12722739), 김병규 , 이현열WATER BEAR PRESS(워터베어프레스)2017.11.06
