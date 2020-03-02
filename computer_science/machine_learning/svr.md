@@ -34,8 +34,8 @@ SVM에는 몇가지 매개변수가 있는데, 선형 SVM의 C, RBF 커널 SVM�
 
 ## 구현
 scikit-learn 패키지에 SVR로 구현되어있다.
-SVR의 커널함수로 Linear, Polynomial, Gaussian RBF를 모두 적용할 수 있다.
-보통 세 종류를 모두 적용해보고 그 중 가장 우수한 성과를 보이는 모형을 최종 선택한다. 
+SVR에서 가장 중요한 파라미터는 커널함수로, Linear, Polynomial, Gaussian RBF를 모두 적용할 수 있다.
+세 종류를 모두 적용해보고 그 중 가장 우수한 성과를 보이는 모형을 최종 선택해도 되겠다.
 
 
 ```python3
@@ -52,7 +52,7 @@ C = [1, 10, 33, 55, 78, 100]
 eps = [0.05, 0.1, 0.5]
 """
 
-X, y = (각자의 data 가공에 맞게)
+X, y = (SVR의 경우 training data X, y를 힐요로 한다. 각자의 data 가공에 맞게...)
 
 # Fit regression model
 svr_lin = SVR(kernel='linear', C=100, gamma='auto')
@@ -61,12 +61,39 @@ svr_lin.fit(X,y)
 y_pred = regressor.predict(y_input)
 ```
 
+이 때, 결과가 잘 나오지 않는다면 Feature들을 Scaling 할 필요가 있을 가능성이 있다. ```sklearn```의 Scaler 중 하나를 선택하자. 여기서는 StandardScaler를 사용한다.
+```python3
+from sklearn.preprocessing import StandardScaler
+
+"""
+TODO: 
+여기에서 X, y를 가공한다.
+"""
+
+scaler_X = StandardScaler()
+scaler_Y = StandardScaler()
+
+X = scaler_X.fit_transform(X)
+y = scaler_Y.fit_transform(y)
+
+"""
+TODO: 
+여기에 SVR 코드를 적용한다.
+"""
+
+y_pred = scaler_y.inverse_transform (\
+                                     (svr_lin.predict( scaler_X.transform(y_input) ))
+                                    )
+```
+
+
+
 #### 참고
 - Flach, Peter. Machine learning: the art and science of algorithms that make sense of data. Cambridge University Press, 2012.
 - Parsons, Simon. "Introduction to Machine Learning by Ethem Alpaydin, MIT Press, 0-262-01211-1, 400 pp., $50.00/£ 32.95." The Knowledge Engineering Review 20, no. 4 (2005): 432-433.
 - Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. Deep learning. MIT press, 2016.
 - [서포트 벡터 머신(SVM)의 사용자로서 꼭 알아야할 것들 - 매개변수 C와 gamma](https://bskyvision.com/163)
-
+- [Support Vector Regression in 6 Steps with Python](https://medium.com/pursuitnotes/support-vector-regression-in-6-steps-with-python-c4569acd062d)
 
 ###### 넋두리
 아아.. 나는 인공지능 1학년 아니고 인공지능 한 살쯤 되는 것 같다...
