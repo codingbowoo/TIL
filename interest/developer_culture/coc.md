@@ -19,3 +19,4 @@ https://en.wikipedia.org/wiki/Code_of_conduct
 - [Contributor Covenant](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html)
 - [Stack Overflow](https://stackoverflow.com/conduct)
     - 조금 다른 내용이지만, 읽어보면 좋을 [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask)
+- [CVPR](http://cvpr2020.thecvf.com/node/479)
