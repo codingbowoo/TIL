@@ -1,4 +1,4 @@
-앞서 [reursionlimit](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/pythonpractice/recursionlimit.md) 
+앞서 [recursionlimit](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/pythonpractice/recursionlimit.md) 
 문서에서의 문제 상황을 당장 해결했지만, 도무지 recursion이 발생하는 포인트를 찾지 못했다. <br>
 그리고 범인은 바로바로...
 
@@ -34,7 +34,7 @@ type
 
 
 * * *
-위 [reursionlimit](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/pythonpractice/recursionlimit.md) 문서에서의 문제 상황을 다시 살펴보자.
+위 [recursionlimit](https://github.com/codingbowoo/codingbowoo-resource/blob/master/stack/pythonpractice/recursionlimit.md) 문서에서의 문제 상황을 다시 살펴보자.
 ```python3
 import pandas as pd
 import utils as u   #자체제작한 모듈 utils.py
@@ -45,19 +45,22 @@ class myDataFrame(pd.DataFrame):
         """ utils.py
         def read_data(filepath):
             df_r = pd.read_csv(filepath, index_col=[0])
-            . . .
+            # 중략
             return df_r
         """
 ```
 
 
-pd.read_csv()의 결과물을 DataFrame 대신 myDataFrame으로 하려고 해서 생기는 문제이다. 
-다른 판다스 함수였어도 그 결과물이 myDataFrame이 되어서 내 함수를 쓰고 있는 것이다. 그러니 recursion이 발생하는 것이 당연하지.
+나의 의도는 pd.read_csv()의 결과물을 DataFrame으로 받자!였으나, 이 경우 DataFrame 대신 pd.read_csv가 그 결과를 myDataFrame으로 반환한다. 따라서 recursionlimit 에러가 발생한다. 
+DataFrame을 반환하는 다른 판다스 함수들도 myDataFrame으로 반환을 시도할 것이다. 당연히 recursion이 발생한다.
+
+
+정리해보면 아래와 같다.
 
 > 1. myDataFrame()을 생성
 > 2. (init 중) pd.load_csv()를 호출
 > 3. pd.load_csv() 결과를 저장하자. 어디에? pd.DataFrame을 상속받은 클래스(myDataFrame)에!
-> 4. 1. 로 이동 및 무한반복
+> 4. 1 로 이동 및 무한반복
 
 
 해당 상속을 없애주는 것/ 함수로 만드는 것으로 문제를 해결할 수 있다. 잘 알아보고 사용하기!
