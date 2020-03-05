@@ -20,3 +20,4 @@ https://en.wikipedia.org/wiki/Code_of_conduct
 - [Stack Overflow](https://stackoverflow.com/conduct)
     - 조금 다른 내용이지만, 읽어보면 좋을 [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask)
 - [CVPR](http://cvpr2020.thecvf.com/node/479)
+- [numpy](https://numpy.org/devdocs/dev/conduct/code_of_conduct.html)
