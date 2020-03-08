@@ -1,11 +1,7 @@
-# batch
-
+# Dataset and DataLoader
 
 
 Pytorch에서 minibatch사용을 도와주는 친구는 ```DataLoader```이다.
-
-- [Guidelines for assigning num_workers to DataLoader](https://discuss.pytorch.org/t/guidelines-for-assigning-num-workers-to-dataloader/813)
-- [Pytorch documentation torch.utils.data.DataLoader](https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader)
 
 일반적으로 가공한 데이터를 DataLoader에 넘길 때는 [Dataset](https://pytorch.org/docs/stable/data.html#torch.utils.data.Dataset) 클래스로 가공해야 한다.
 [TensorDataset](https://pytorch.org/docs/stable/data.html#torch.utils.data.TensorDataset)의 인자로 가공한 input, label을 넘겨주면 된다.
@@ -33,5 +29,14 @@ class TensorDataset(Dataset):
     def __len__(self):
         return self.tensors[0].size(0)
 ```
+
+**Custom dataset**을 쓸 때는  Kaggle kernel [PyTorch Dataset and DataLoader](https://www.kaggle.com/pinocookie/pytorch-dataset-and-dataloader?fbclid=IwAR2dfKfjljmnoJUdMIttrxffZF4kJOyG5kqzverzIVZoySGq3EJOtFNvqcA)를 참고하면 좋을 듯 하다! torch version이 0.4.0 인 것은 주의(본인 현재 v1.3.1 사용중), MNIST dataset으로 설명하고 있다.
+
+
+###### 참고자료
+- [Guidelines for assigning num_workers to DataLoader](https://discuss.pytorch.org/t/guidelines-for-assigning-num-workers-to-dataloader/813)
+- [Pytorch documentation torch.utils.data.DataLoader](https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader)
+- [Github Issue: How to load huge file of data?](https://github.com/pytorch/text/issues/130#issuecomment-531901039) for ```pytorch/text```
+
 
 
