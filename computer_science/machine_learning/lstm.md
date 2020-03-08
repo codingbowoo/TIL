@@ -25,6 +25,7 @@ A. 내가 다루는 금융 데이터도 시계열적인 특징이 있지.
 - 기존 RNN의 반복 구조에 tanh layer 하나가 있었다면, LSTM에는 4개의 layer가 있다. 
 - 가장 핵심은 **Cell state**의 존재, 그리고 이 Cell state에 정보를 더하고 빼는 것이 3개의 **gate**라는 구조
   - Gate는 Sigmoid층과 pointwise multiplication 연산으로 구성된다.
+  - sigmoid, tanh activation이 쓰이므로 input data의 scale에 민감하다! 
   1. Forget gate layer
       - 지난 timestep t-1의 output(hidden state)와 현재 timestep t의 input을 받는다.
       - sigmoid layer에서 잊을 정보를 결정한다. 결과가 0이면 모두 잊는다 / 1이면 모두 기억한다.
@@ -56,30 +57,6 @@ c0 = torch.randn(2, 3, 20)
 output, (h_n, c_n) = lstm(_input, (h_0, c_0))
 ```
 
-일반적으로 아래처럼 class를 만들어서 사용한다. 
-아래 예시는 output을 만들 때 Fully connected(nn.Linear)
-```python3
-class LSTM(nn.Module):
-    def __init__(self, input_size=1, hidden_size=100, output_size=1):
-        super().__init__()
-        self.hidden_size = hidden_size
-        
-        # torch.nn.LSTM(*args, **kwargs)
-        self.lstm = nn.LSTM(input_size, hidden_size)
-        
-        #torch.nn.Linear(in_features, out_features, bias=True)
-        self.linear = nn.Linear(hidden_size, output_size) 
-        
-        self.hidden_cell = (torch.zeros(1,1,self.hidden_size),
-                            torch.zeros(1,1,self.hidden_size)) # (h_0, c_0)
-
-    def forward(self, input_seq):
-        lstm_out, self.hidden_cell = self.lstm(input_seq.view(len(input_seq) ,1, -1), self.hidden_cell)
-        predictions = self.linear(lstm_out.view(len(input_seq), -1))
-        return predictions[-1]
-```
-
-
 #### Stacked LSTM
 
 - LSTM을 쌓은 구조. 한 층의 결과값을 위 층의 input으로 사용하자.
@@ -92,9 +69,8 @@ class LSTM(nn.Module):
 
 #### LSTM-AE
 - [Srivastava, Nitish, Elman Mansimov, and Ruslan Salakhudinov. "Unsupervised learning of video representations using lstms." In International conference on machine learning, pp. 843-852. 2015.](http://proceedings.mlr.press/v37/srivastava15.pdf)
-사실 이건 단순히 ㄹㅅㅌㅁ에 ㅇㅌㅇㅋㄷ를 연결한 것이 아니다! 
-인코더 ㄽㅌㅁ와 디코더 ㄽㅌㅁ를 사용하는 것.
-2016 스리뭐시기의 논문 뫄뫄에서 제안하고 있다.
+사실 이건 단순히 LSTM에 Autoencoder를 연결한 것이 아니다! 인코더 LSTM와 디코더 LSTM을 사용
+
 이 논문에서는 인풋을 뭘 쓰고 아웃풋은 뭘 원한다
 그래서 기본 구조 쓰지 않고 인코더 디코더 구조를 쓰는데, 
 이때 데이터 특성이 뭐뭐여서 ㄽㅌㅁ를 사용한다. 
