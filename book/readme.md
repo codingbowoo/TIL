@@ -6,6 +6,7 @@
 - [매일 의존하며 살아갑니다](https://github.com/codingbowoo/codingbowoo-resource/blob/master/book/care_therapy.md) | 도하타 가이토, 김영현 옮김 | 다다서재
 ### ㅂ
 ### ㅅ
+- [생체리듬의 과학](https://github.com/codingbowoo/codingbowoo-resource/blob/master/book/the_circadian_code.md)| 사친 판다 지음, 김수진 옮김 | 세종서적
 - [실전 퀀트투자](https://github.com/codingbowoo/codingbowoo-resource/blob/master/book/quantitative_investment.md) | 홍용찬 | 이레미디어
 
 ###  ㅇ
