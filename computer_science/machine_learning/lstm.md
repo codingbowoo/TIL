@@ -57,6 +57,25 @@ c0 = torch.randn(2, 3, 20)
 output, (h_n, c_n) = lstm(_input, (h_0, c_0))
 ```
 
+
+class torch.nn.LSTM(*args, \*\*kwargs)의 Parameter로는 
+- input_size, hidden_size, num_layers, bias와 같은 수치,
+- batch_first, dropout, bidirectional 여부 등이 있다.
+
+input은 ```input, (h_0, c_0)``` 꼴인데, 이 때
+- input의 shape는 (seq_len, batch, input_size) 
+    - ```batch_first=True```인 경우엔 (batch, seq_len, input_size) 
+- h_0과 c_0의 shape는 (num_layers * num_directions, batch, hidden_size)
+
+output은 ```output, (h_n, c_n)``` 꼴이고, 
+h_n, c_n은 각각 seq_len만큼의 time step의 hidden state와 cell state이다.
+output은 LSTM 마지막 layer의 h_t와 동일한 값을 가진다.
+
+
+
+
+
+
 #### Stacked LSTM
 
 - LSTM을 쌓은 구조. 한 층의 결과값을 위 층의 input으로 사용하자.
@@ -73,12 +92,13 @@ output, (h_n, c_n) = lstm(_input, (h_0, c_0))
 
 이 논문에서는 인풋을 뭘 쓰고 아웃풋은 뭘 원한다
 그래서 기본 구조 쓰지 않고 인코더 디코더 구조를 쓰는데, 
-이때 데이터 특성이 뭐뭐여서 ㄽㅌㅁ를 사용한다. 
+이때 데이터 특성이 뭐뭐여서 LSTM을 사용한다. 
 구성은 다음과 같다
-- 인코더 ㄽㅌㅁ
-- 디코더 ㄽㅌㅁ
+- 인코더 LSTM
+- 디코더 LSTM
 - 뭔가 세번째 구조가 있을 것만 같군.
  
  #### Resource
 - Pytorch tutorial
 -[SEQUENCE MODELS AND LONG-SHORT TERM MEMORY NETWORKS](https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html)
+- LSTMCell을 사용한 예제 [LSTM for time series prediction](https://romanorac.github.io/machine/learning/2019/09/27/time-series-prediction-with-lstm.html)
