@@ -20,12 +20,12 @@ A. 내가 다루는 금융 데이터도 시계열적인 특징이 있지.
 ### LSTM 이용 다양한 아키텍처
 
 #### (Vanilla) LSTM
-- 가장 기본 LSTM
-- long-term dependency problem: 기존 RNN의 필요한 정보의 거리가 멀어지면 연결이 힘들다는 단점을 극복하고자 한다. 
-- 기존 RNN의 반복 구조에 tanh layer 하나가 있었다면, LSTM에는 4개의 layer가 있다. 
-- 가장 핵심은 **Cell state**의 존재, 그리고 이 Cell state에 정보를 더하고 빼는 것이 3개의 **gate**라는 구조
+- long-term dependency problem: 기존 RNN의 필요한 정보의 거리가 멀어지면 연결이 힘들다는 단점을 극복하고자 한다. 기존 RNN의 반복 구조에 tanh layer 하나가 있었다면, LSTM에는 4개의 layer가 있다. 
+- 가장 핵심은 **Cell state**의 존재, 그리고 이 Cell state에 정보를 더하고 빼는 것이 3개(Forget, Update, Output)의 **gate**라는 구조
   - Gate는 Sigmoid층과 pointwise multiplication 연산으로 구성된다.
   - sigmoid, tanh activation이 쓰이므로 input data의 scale에 민감하다! 
+  
+  
   1. Forget gate layer
       - 지난 timestep t-1의 output(hidden state)와 현재 timestep t의 input을 받는다.
       - sigmoid layer에서 잊을 정보를 결정한다. 결과가 0이면 모두 잊는다 / 1이면 모두 기억한다.
@@ -42,21 +42,9 @@ A. 내가 다루는 금융 데이터도 시계열적인 특징이 있지.
 
 - 파이토치 튜토리얼 [SEQUENCE MODELS AND LONG-SHORT TERM MEMORY NETWORKS](https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html)
 
-가장 기본적인 LSTM cell 하나는 아래처럼 사용할 수 있다. 
+
+##### LSTM on Pytorch
 LSTM과 관련한 파이토치 문서는 [여기](https://pytorch.org/docs/stable/nn.html#lstm)를 참고하자.
-```python3
-import torch
-import torch.nn as nn
-
-lstm = nn.LSTM(10, 10, 2)
-
-_input = torch.randn(5, 3, 10)
-h0 = torch.randn(2, 3, 20)
-c0 = torch.randn(2, 3, 20)
-
-output, (h_n, c_n) = lstm(_input, (h_0, c_0))
-```
-
 
 class torch.nn.LSTM(*args, \*\*kwargs)의 Parameter로는 
 - input_size, hidden_size, num_layers, bias와 같은 수치,
@@ -72,31 +60,38 @@ h_n, c_n은 각각 seq_len만큼의 time step의 hidden state와 cell state이�
 output은 LSTM 마지막 layer의 h_t와 동일한 값을 가진다.
 
 
+LSTM을 아래와 같이 선언했다고 해보자.
+```python3
+import torch.nn as nn
+model = nn.LSTM(input_size=1,\
+                hidden_size=10,\
+                num_layers=1,\
+                batch_first=True,
+                dropout=0.5,\
+                bidirectional=False)
+``` 
+이 모델이 학습하는 파라미터들의 모양을 찍어보면 다음과 같다.
+```python3
+# 이렇게 찍는다
+for params in model.parameters():
+    print(type(params), params.shape)
+    
+# 결과
+# <class 'torch.nn.parameter.Parameter'> torch.Size([40, 1])
+# <class 'torch.nn.parameter.Parameter'> torch.Size([40, 10])
+# <class 'torch.nn.parameter.Parameter'> torch.Size([40])
+# <class 'torch.nn.parameter.Parameter'> torch.Size([40])
+```
+위에서부터, 
 
+- LSTM.weight_ih_l[k] : input-hidden weight of shape (4*hidden_size, input_size)
+    - num_layer가 1이 넘어갈 경우 두 번째 layer부터는 shape (4*hidden_size, num_directions * hidden_size)
+- LSTM.weight_hh_l[k] : hidden-hidden weights of shape (4*hidden_size, hidden_size)
+- LSTM.bias_ih_l[k] : input-hidden bias of shape (4*hidden_size)
+- LSTM.bias_hh_l[k] : hidden-hidden bias of shape (4*hidden_size)
 
+이고, hidden_size에 곱하는 **4**는 **input, forget, cell, output 4개의 gate**에 해당한다.
 
-
-#### Stacked LSTM
-
-- LSTM을 쌓은 구조. 한 층의 결과값을 위 층의 input으로 사용하자.
-- 위로 위로 쌓아 올려서 가장 위의 LSTM 층의 결과값을 최종 결과로 사용한다. 
-
-이거 사용한 논문은 뭐가 있냐면 뫄뫄가 있다.
-쌓았다는 말이 무슨 말이냐면
-여기서는 인풋을 뭘 쓰고 아웃풋은 뭘 원한다
-그래서 기본 구조 안쓰고 쌓아올렸다
-
-#### LSTM-AE
-- [Srivastava, Nitish, Elman Mansimov, and Ruslan Salakhudinov. "Unsupervised learning of video representations using lstms." In International conference on machine learning, pp. 843-852. 2015.](http://proceedings.mlr.press/v37/srivastava15.pdf)
-사실 이건 단순히 LSTM에 Autoencoder를 연결한 것이 아니다! 인코더 LSTM와 디코더 LSTM을 사용
-
-이 논문에서는 인풋을 뭘 쓰고 아웃풋은 뭘 원한다
-그래서 기본 구조 쓰지 않고 인코더 디코더 구조를 쓰는데, 
-이때 데이터 특성이 뭐뭐여서 LSTM을 사용한다. 
-구성은 다음과 같다
-- 인코더 LSTM
-- 디코더 LSTM
-- 뭔가 세번째 구조가 있을 것만 같군.
  
  #### Resource
 - Pytorch tutorial
