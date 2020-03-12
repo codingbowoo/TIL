@@ -17,36 +17,34 @@ Q. 나는 어디에 쓸 것인가? 왜 쓸 것인가? <br>
 A. 내가 다루는 금융 데이터도 시계열적인 특징이 있지.
 
 
-### LSTM 이용 다양한 아키텍처
-
-#### (Vanilla) LSTM
+### LSTM
 - long-term dependency problem: 기존 RNN의 필요한 정보의 거리가 멀어지면 연결이 힘들다는 단점을 극복하고자 한다. 기존 RNN의 반복 구조에 tanh layer 하나가 있었다면, LSTM에는 4개의 layer가 있다. 
 - 가장 핵심은 **Cell state**의 존재, 그리고 이 Cell state에 정보를 더하고 빼는 것이 3개(Forget, Update, Output)의 **gate**라는 구조
   - Gate는 Sigmoid층과 pointwise multiplication 연산으로 구성된다.
   - sigmoid, tanh activation이 쓰이므로 input data의 scale에 민감하다! 
   
   
-  1. Forget gate layer
+  1. **Forget gate layer**
       - 지난 timestep t-1의 output(hidden state)와 현재 timestep t의 input을 받는다.
       - sigmoid layer에서 잊을 정보를 결정한다. 결과가 0이면 모두 잊는다 / 1이면 모두 기억한다.
-  2. Input gate layer
+  2. **Input gate layer**
       - 지난 timestep t-1의 output와 현재 timestep t의 input을 받는다.
       - sigmoid layer에서 *cell state에 추가할 정보* 를 결정한다.
-  3. tanh layer에서 새로운 후보 value를 생성하고, 두 layer(input gate sigmoid, tanh)의 결과를 합친다.
+  3. **tanh layer**에서 새로운 후보 value를 생성하고, 두 layer(input gate sigmoid, tanh)의 결과를 합친다.
   4. cell state를 업데이트한다. 
       - forget gate 결과를 multiply
       - input gate 결과를 add
   5. 업데이트한 cell state 결과를 바탕으로 결과output 값을 결정한다. 
-      - *sigmoid layer를 통과한 timestep t-1의 hidden state* (범위 0~1)와
+      - **output gate**, *sigmoid layer를 통과한 timestep t-1의 hidden state* (범위 0~1)와
       - *tanh layer를 통과한 cell state* (범위 -1 ~ 1)를 더해준다. 
 
 - 파이토치 튜토리얼 [SEQUENCE MODELS AND LONG-SHORT TERM MEMORY NETWORKS](https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html)
 
 
-##### LSTM on Pytorch
+### LSTM on Pytorch
 LSTM과 관련한 파이토치 문서는 [여기](https://pytorch.org/docs/stable/nn.html#lstm)를 참고하자.
 
-class torch.nn.LSTM(*args, \*\*kwargs)의 Parameter로는 
+```class torch.nn.LSTM(*args, **kwargs)```의 Parameter로는 
 - input_size, hidden_size, num_layers, bias와 같은 수치,
 - batch_first, dropout, bidirectional 여부 등이 있다.
 
