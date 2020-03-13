@@ -14,3 +14,11 @@
 대표적으로 Facebook의 FBLearner Flow - 재사용성과 유연성, 완전한 자동화에 대해 고민한다! 
 - [Introducing FBLearner Flow: Facebook’s AI backbone](https://engineering.fb.com/ml-applications/introducing-fblearner-flow-facebook-s-ai-backbone/)
   : 2016년 글
+
+
+### ML flow를 도와주는 도구들
+- [Weights&Biases](https://docs.wandb.com/)
+- [Sacred](https://github.com/IDSIA/sacred)
+  - 함께 써요 [Omniboard](https://github.com/vivekratnavel/omniboard)
+- [Tensorboard in Pytorch](https://pytorch.org/docs/stable/tensorboard.html)
+- 시각화 도구 [Visdom](https://github.com/facebookresearch/visdom)
