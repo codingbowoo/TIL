@@ -52,7 +52,7 @@ C = [1, 10, 33, 55, 78, 100]
 eps = [0.05, 0.1, 0.5]
 """
 
-X, y = (SVR의 경우 training data X, y를 힐요로 한다. 각자의 data 가공에 맞게...)
+X, y = (SVR의 경우 training data X, y를 필요로 한다. 각자의 data 가공에 맞게...)
 
 # Fit regression model
 svr_lin = SVR(kernel='linear', C=100, gamma='auto')
