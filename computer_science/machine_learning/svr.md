@@ -81,9 +81,7 @@ TODO:
 여기에 SVR 코드를 적용한다.
 """
 
-y_pred = scaler_y.inverse_transform (\
-                                     (svr_lin.predict( scaler_X.transform(y_input) ))
-                                    )
+y_pred = scaler_y.inverse_transform(svr_lin.predict(scaler_X.transform(y_input)))
 ```
 
 
