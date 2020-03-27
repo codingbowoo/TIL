@@ -25,7 +25,14 @@ df = pd.DataFrame()
     df.isnull().sum()  # 이렇게 하면 True 다 더해지니까 NaN값 개수를 쉽게 볼 수 있다.
     
     ```
-
-2. 추가 예정
+    
+    
+3. 추가 예정
     ```python3
     ```
+    
+    
+    
+##### 모르는 것을 검색할 때 유용한 키워드
+ ``` pandas DataFrame ... ```, ```elementwise```, ```index```, ```DateTimeIndex```,  ```column```
+
