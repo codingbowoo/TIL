@@ -2,8 +2,6 @@
 
 https://docs.scipy.org/doc/numpy/index.html
 
-자주 검색하는 함수 몇 가지 투척할 예정
-
 주로 사용하는 데이터 타입이 pandas DataFrame이라 예시도 DataFrame과 함께! <br>
 아래처럼 numpy를 import 했고 모종의(?) 데이터가 든 DataFrame이 있다고 가정하자.
 ```python3
@@ -13,30 +11,54 @@ import pandas as pd
 df = pd.DataFrame()
 ```
 
-1. np.zeros(shape, dtype=float, order='C')
-    ```python3
-    np.zeros(df.values.shape)
-    # dtype = data type
-    # order = 'C' : C-style (row-major)
-    #         'F' : Fortran-style (column-major)
-    ```
-    df.values의 type은 ```<class 'numpy.ndarray'>``` 이다. 어떤 DataFrame과 동일한 shape의, 0으로 initialize된 numpy array가 필요할 때 사용한다.
-    https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html
-    
-    
-2. 조건문에서 True 여부 판단시 사용하는 ```np.all```
-    ```python3
-    # 기본형
-    numpy.all(a, axis=None, out=None, keepdims=<no value>)
-    
-    # 실제 사용 예시
-    np.all(df.values == np.zeros(df.values.shape))
-    # df.values == np.zeros(df.values.shape) 의 결과는 elementwise한 비교 결과 
-    # e.g. [True, False, ... , True] : 이 결과의 element가 모두 True면 return값이 True
-    ```
-    https://docs.scipy.org/doc/numpy/reference/generated/numpy.all.html
+# 목차
 
-3. 추가 예정
+- [numpy array 0으로 initialize](#np-zeros)
+- [RuntimeWarning: invalid value encountered in power](#power-warning)
+- [조건문에서 True 여부 판단](#np-all)
+
+
+* * *
+### RuntimeWarning: invalid value encountered in power <a id="power-warning"></a>
+코드를 돌렸는데 다짜고짜 에러가 났다! 
+> C:\ProgramData\Anaconda3\envs\{내 ENV이름}\lib\site-packages\ipykernel_launcher.py:1: **RuntimeWarning: invalid value encountered in power**
+  """Entry point for launching an IPython kernel.
+```python3
+np.power(a, num)
+```
+을 수행하는데, a가 음수이고 num이 정수가 아닐 경우 발생하는 에러였다. 실제로 계산 결과에 무려 ```j```가 붙는 것을 확인할 수 있었다. 갑자기 분위기 복소수... 경우에 따라 다르겠지만, 다음과 같이 고칠 수 있다. 
+```python3
+np.sign(a) * np.power(np.abs(a), num) # 부호는 살리고 power 연산은 수행
+```
+- https://stackoverflow.com/questions/45384602/numpy-runtimewarning-invalid-value-encountered-in-power
+
+* * *
+### np.zeros(shape, dtype=float, order='C') <a id="np-zeros"></a>
+df.values의 type은 ```<class 'numpy.ndarray'>``` 이다. 어떤 DataFrame과 동일한 shape의, 0으로 initialize된 numpy array가 필요할 때 사용한다.
+
+```python3
+np.zeros(df.values.shape)
+# dtype = data type
+# order = 'C' : C-style (row-major)
+#         'F' : Fortran-style (column-major)
+```
+- https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html
+
+* * *
+### 조건문에서 True 여부 판단시 사용하는 ```np.all``` <a id="np-all"></a>
+```python3
+# 기본형
+numpy.all(a, axis=None, out=None, keepdims=<no value>)
+
+# 실제 사용 예시
+np.all(df.values == np.zeros(df.values.shape))
+# df.values == np.zeros(df.values.shape) 의 결과는 elementwise한 비교 결과 
+# e.g. [True, False, ... , True] : 이 결과의 element가 모두 True면 return값이 True
+```
+- https://docs.scipy.org/doc/numpy/reference/generated/numpy.all.html
+
+* * *
+### 템플릿 <a id=""></a>
     ```python3
     ```
     
