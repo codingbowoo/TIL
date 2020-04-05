@@ -63,3 +63,5 @@ for gen in range(50):
 - DEAP을 사용하는 간단한 튜토리얼 [Using Genetic Algorithms for optimizing your models](https://hub.packtpub.com/using-genetic-algorithms-for-optimizing-your-models-tutorial/) by Natasha Mathur
     - 내가 가진 글자를 알아맞추는 유전 알고리즘을 만들어 봅시다! 
     - LSTM 모델의 RMSE를 줄이는 window size와 hidden unit의 개수를 맞춰봅시다! 
+    
+- [Using Genetic Algorithm for optimizing Recurrent Neural Network](http://aqibsaeed.github.io/2017-08-11-genetic-algorithm-for-optimizing-rnn/) by Aaqib Saeed
