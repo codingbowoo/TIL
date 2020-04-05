@@ -3,12 +3,64 @@
 DEAP은 2012년 발표(?)된 유전 알고리즘 관련 파이썬 라이브러리다.  [DEAP: A Python framework for Evolutionary Algorithms](https://www.researchgate.net/publication/235707002_DEAP_A_Python_framework_for_Evolutionary_Algorithms)을 참고.
 
 
-DEAP의 핵심은 크게 2가지로 나뉜다. **```creator```**, **```toolbox```**, 
+DEAP의 핵심은 크게 2가지로 나뉜다.
+### **```creator```**/ **```toolbox```**
 - **```creator```**: 상속inheritance와 구성composition을 통해 런타임에 클래스를 생성한다. 만든 클래스에는 데이터나 함수 등의 속성을 추가할 수 있다. 리스트, 셋, 딕셔너리 등 자료구조에 구애받지 않고 유전형을 생성할 수 있다.
 - **```toolbox```**: 유전 연산자를 담는 도구상자라고 생각할 수 있다. 프로그래머는 사용할 연산자를 고른 후 toolbox에 등록register하는 과정을 거치고, 후에 등록 시 사용했던 alias를 통해 접근 가능하다.
 
+#### Creating Individual
+여기서 ```register()``` 메소드를 주목한다. <br>
+최소 두 개의 인자를 가지는데 뭐냐면 1)alias와 2)그 alias에 할당하는 함수이다.
+```python3
+import random
 
-이런 모듈들도 있다. ```algorithms```, ```base```, ```dtm```
+from deap import base
+from deap import creator
+from deap import tools
+
+creator.create("FitnessMax", base.Fitness, weights=(1.0,))
+creator.create("Individual", list, fitness=creator.FitnessMax) #Inherit from basic list type
+
+IND_SIZE=10
+
+toolbox = base.Toolbox()
+toolbox.register("attr_float", random.random)
+toolbox.register("individual", tools.initRepeat, creator.Individual,
+                 toolbox.attr_float, n=IND_SIZE) 
+```
+이렇게 하면 ```toolbox.individual()```을 부르면 ```initRepeat```을 부르고, 최종으로 ```IND_SIZE```개 만큼의 숫자를 가지는 완전한 (의도한) ```creator.Individual```을 반환할 것이다.
+
+위의 예시는 실수 숫자를 IND_SIZE만큼 나열한 형태고, 실제로는 아래 예시를 많이 쓰게 되지 않을까?
+```python3
+from deap import base
+from deap import creator
+from deap import tools
+
+creator.create("FitnessMax", base.Fitness, weights=(1.0, 1.0))
+creator.create("Individual", list, fitness=creator.FitnessMax)
+
+toolbox = base.Toolbox()
+
+INT_MIN, INT_MAX = 5, 10
+FLT_MIN, FLT_MAX = -0.2, 0.8
+N_CYCLES = 4
+
+toolbox.register("attr_int", random.randint, INT_MIN, INT_MAX)
+toolbox.register("attr_flt", random.uniform, FLT_MIN, FLT_MAX)
+toolbox.register("individual", tools.initCycle, creator.Individual,
+                 (toolbox.attr_int, toolbox.attr_flt), n=N_CYCLES)
+```
+```toolbox.individual()```을 부르면 [int float int float ... int float] 과 같은 형태의 Individual을 반환할 것이다. initCycle의 쓰임은 아래와 같다.
+
+```python3
+>>> func_seq = [lambda:1 , lambda:'a', lambda:3]
+>>> initCycle(list, func_seq, n=2)
+[1, 'a', 3, 1, 'a', 3]
+```
+
+
+
+### ```algorithms```, ```base```, ```dtm```
 
 - ```algorithms```: 고전적인 진화 알고리즘을 포함하고 있다. 알고리즘들의 이름이 굉장히 낯설다...
     - generational
@@ -19,6 +71,13 @@ DEAP의 핵심은 크게 2가지로 나뉜다. **```creator```**, **```toolbox``
 - ```base```: generic fitness object 등이 들어있다. 진화 알고리즘에서 많이 쓰이는 자료구조들에 대한 내용이다.
 - ```dtm```: 초창기 논문에는 소개가 되어 있는데, 현재는 사라진 모듈인 것 같다. 대신 [Basic tutorials part 4: Using Multiple Processors](https://deap.readthedocs.io/en/master/tutorials/basic/part4.html)를 참고해서 분산 계산을 해야겠다! 
 
+
+
+
+
+
+
+### 예제 코드
 [DEAP: A Python framework for Evolutionary Algorithms](https://www.researchgate.net/publication/235707002_DEAP_A_Python_framework_for_Evolutionary_Algorithms)의 예제 코드이다.
 ```python3
 import knn, random
