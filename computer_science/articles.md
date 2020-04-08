@@ -21,7 +21,9 @@
 ## Diversity
 - [A Nude ‘Playboy’ Photo Has Been a Mainstay in Testing Tech for Decades](https://onezero.medium.com/a-nude-playboy-photo-has-been-a-mainstay-in-testing-tech-for-decades-b8cdb434dce1) by [Corinne Purtill](https://onezero.medium.com/@corinnepurtill)
     - Lena Söderberg씨의 플레이보이 사진이 이미지 프로세싱할 때 많이 쓰이는 것과 관련한 이야기. CODE LIKE A GIRL에서 시작한 [Losing Lena](https://vimeo.com/372265771)영상도 보자. 아티클에서는 해당 이미지에 국한된 이야기가 아닌 업계 전반의 다양성 부재-의도치 않은 배제의 문화를 지적한다. 번역해볼까 싶은 글.  
-    
+- [There Is a Racial Divide in Speech-Recognition Systems, Researchers Say](https://www.nytimes.com/2020/03/23/technology/speech-recognition-bias-apple-amazon-google.html?action=click&module=News&pgtype=Homepage) By [Cade Metz](https://www.nytimes.com/by/cade-metz)
+    - 새로운 기술이 나왔을 때 편향bias과 차별discrimination에 대해 좀 더 고려할 필요가 있다고 생각하고, 이를 연구하는 사람들이 있다. 안녕 난 인공지능 서비스야! 하고 세상에 나왔는데(많은 이들이 기술은 객관적이라고 생각할 것이다), 사실은 예를 들어 사투리, 여성, 백인이 아닌 다른 인종을 구분하는 등에 있어 정확도가 떨어지는 상황에 대한 연구다. 
+    - GAN으로 만든 이미지가 여자는 긴머리에 여리여리한(여리여리하다: 단단하지 못하며 무르고 약하다.) 느낌이고 남자는 선도 굵고 느낌이 확 다르다. 역시 여자남자는 다르게 생긴게 분명하다(...) 라고 말하는 사람을 본 적 있다. 과연 그 GAN의 training data에 안 여리한 여자, 여리한 남자가 있었을까? 학습 데이터는 충분히 diverse한가? 모든 집단을 아우르는가? 애초에 편향된 데이터를 사용한 것은 아닌가? **We Teach A.I. Systems Everything, Including Our Biases**. 반면, 세상에 이미 편향이 존재하는데 기술이 그것을 반영하지 않는 것이 옳은 것인가? 당연히 case by case겠지만, 이야기를 나눠볼 필요가 있다. 
 
 ## Finance
 - [Python for finance tutorial](https://github.com/datacamp/datacamp-community-tutorials/blob/master/Python%20Finance%20Tutorial%20For%20Beginners/Python%20For%20Finance%20Beginners%20Tutorial.ipynb)
