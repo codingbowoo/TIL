@@ -37,3 +37,7 @@ ax.set_title('titlename')
 plt.savefig(f, format='png')
 plt.savefig(f, format='eps', dpi=1000)
 ```
+항상 기본이 되는 
+- [matplotlib rcParams](https://matplotlib.org/tutorials/introductory/customizing.html#matplotlib-rcparams)
+- [matplotlib.axes](https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes)
+- [matplotlib.axes.Axes.plot](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.plot.html#matplotlib-axes-axes-plot)
