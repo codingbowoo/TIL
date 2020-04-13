@@ -1,0 +1,2 @@
+- [Visualization Combo with Python](https://towardsdatascience.com/jupyter-superpower-interactive-visualization-combo-with-python-ffc0adb37b7b) by Nok
+    - [Vega-lite](https://github.com/vega/vega-lite)를 기반으로 하는 [Altair](https://altair-viz.github.io/)를 소개한다.
