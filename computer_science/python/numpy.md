@@ -12,11 +12,23 @@ df = pd.DataFrame()
 ```
 
 # 목차
-
+- [Logical AND](#logical-and)
 - [numpy array 0으로 initialize](#np-zeros)
 - [RuntimeWarning: invalid value encountered in power](#power-warning)
 - [조건문에서 True 여부 판단](#np-all)
 
+
+* * *
+### Logical AND <a id="logical-and"></a>
+조건을 사용해서 DataFrame을 접근하고 싶은데, 조건이 2개 이상일 때가 있다. 그럴땐 logical_and를 사용하자! 
+
+```python3
+np.logical_and([True, False], [False, False])
+# Output: 
+# array([False, False])
+```
+```(최종 조건) = np.logical_and((조건1) , (조건2))``` 와 같이 사용하면 좋다! 
+- https://docs.scipy.org/doc/numpy/reference/generated/numpy.logical_and.html
 
 * * *
 ### RuntimeWarning: invalid value encountered in power <a id="power-warning"></a>
@@ -59,6 +71,8 @@ np.all(df.values == np.zeros(df.values.shape))
 
 * * *
 ### 템플릿 <a id=""></a>
+```python3
+```
     ```python3
     ```
     
