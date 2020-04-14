@@ -1,10 +1,30 @@
 # Matplotlib.pyplot
 
 ## Contents
+
 - [plt.savefig() 했는데 아무것도 나오지 않는다구?](#reset)
 - [smooth한 그래프를 그리고 싶습니다](#smooth-interpolate)
 - [매번 plot 그릴 때마다 너무 헤매서 적어두는 (나름) template](#template)
+- [매번 찾는 color code](#color-code)
 
+* * *
+### 매번 찾는 color code <a id="color-code"></a>
+
+[Default style: colors in default property cycle](https://matplotlib.org/3.1.3/users/dflt_style_changes.html#colors-color-cycles-and-color-maps)
+<br>
+아래는 dataframe의 each column(y)을 plot할 때 종종 사용하는 코드다.
+```python3
+def plot_with_style(df, kind='line', y=None, figsize=None, color=None, linewidth=3, linestyle=None,fontsize=16, ax=None):
+    return df.plot(kind=kind, 
+                    y=y,
+                    #figsize=figsize,
+                    color=color,
+                    linestyle=linestyle,
+                    linewidth=linewidth,
+                    fontsize=fontsize,
+                    ax=ax, 
+                   )
+```
 
 * * *
 ### plt.savefig <a id="reset"></a>
