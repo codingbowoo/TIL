@@ -10,6 +10,8 @@
 
 # C
 - **Cross Section 크로스 섹션**: 같은 시간위치에 존재하는 것 
+- **Cross-sectional momentum 횡단면 모멘텀**: portfolio stock을 결정지을 때 winner-loser 판단 기준을 "상대적"으로 하는 것
+    - time-series가 absolute return을 판단 기준으로 하는 것과 대비된다.
 
 # D
 - **Drawdown 드로우다운**: 고점 대비 저점까지의 하락폭
