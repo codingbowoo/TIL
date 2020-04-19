@@ -25,9 +25,15 @@ df = pd.DataFrame()
     df.isnull().sum()  # 이렇게 하면 True 다 더해지니까 NaN값 개수를 쉽게 볼 수 있다.
     
     ```
+        
+3. 중복 columns 없애기
+    ```python3
+    df = df.loc[:,~df.columns.duplicated()]
+    ```
+    - [pandas.DataFrame.duplicated](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.duplicated.html)
+    - [Remove duplicate columns by name in Pandas](https://www.interviewqs.com/ddi_code_snippets/remove_duplicate_cols)
     
-    
-3. 추가 예정
+4. 추가 예정
     ```python3
     ```
     
