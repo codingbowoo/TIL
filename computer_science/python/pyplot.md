@@ -39,7 +39,7 @@ plt.savefig(f, format="eps", dpi=1000)
 
 
 * * *
-### smooth한 그래프 - scipiy의 interpolate.spline <a id="smooth-interpolate"></a>
+### smooth한 그래프 - scipy의 interpolate.spline <a id="smooth-interpolate"></a>
 
 신에게는 x와 y의 list가 있는데... 점들을 부드럽게 잇고 싶어진 것이다! scipy의 interpolate의 힘을 빌려보자.
 ```python3
@@ -53,6 +53,7 @@ spl = make_interp_spline(x, y)
 ys = spl(xs)
 l1, = ax.plot(xs, ys)
 ```
+이렇게 하면 구물구불한 그래프가 나온다. 만약 다항식 형태의 그래프를 원한다면 numpy의 polyfit을 써보자.
 - https://docs.scipy.org/doc/scipy/reference/interpolate.html#module-scipy.interpolate
 
 
