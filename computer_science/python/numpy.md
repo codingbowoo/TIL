@@ -14,8 +14,31 @@ df = pd.DataFrame()
 # 목차
 - [Logical AND](#logical-and)
 - [numpy array 0으로 initialize](#np-zeros)
+- [Polyfit으로 점들을 이어보자](#polyfit)
 - [RuntimeWarning: invalid value encountered in power](#power-warning)
 - [조건문에서 True 여부 판단](#np-all)
+
+* * *
+### Polyfit <a id="polyfit"></a>
+x, y 좌표들이 주어졌을 때 Mean Square Error를 최소화하는 ```degree=N```인 다항식을 찾아보자!
+```python3
+degree = 2
+
+x_list, y_list = [a for a in range(1, 11)], [a for a in range(2, 21)]
+
+p2 = np.poly1d(np.polyfit(x_list, y_list, degree))
+
+xs = np.linspace(min(x_list), max(x_list), 1000)
+ys = p2(xs)
+```
+
+1. ```np.polyfit()```:  MSE를 최소화하는, 입력으로 넣어준 degree에 해당하는 다항식을 찾아서 그 계수(coefficient)를 반환하는 함수다. 
+2. ```np.poly1d()```: 계수를 입력으로 받는 다항식 클래스
+    1) 다항식을 construct하고, 
+    2) x값을 넣어서 evaluate하자! (위 예제에서는 xs)
+
+- [numpy.polyfit](https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html)
+- [numpy.poly1d](https://docs.scipy.org/doc/numpy/reference/generated/numpy.poly1d.html)
 
 
 * * *
@@ -73,8 +96,6 @@ np.all(df.values == np.zeros(df.values.shape))
 ### 템플릿 <a id=""></a>
 ```python3
 ```
-    ```python3
-    ```
     
     
     
