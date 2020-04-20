@@ -4,8 +4,30 @@
 
 - [plt.savefig() 했는데 아무것도 나오지 않는다구?](#reset)
 - [smooth한 그래프를 그리고 싶습니다](#smooth-interpolate)
+- [x축이 날짜입니다](#date-tick-labels)
 - [매번 plot 그릴 때마다 너무 헤매서 적어두는 (나름) template](#template)
 - [매번 찾는 color code](#color-code)
+- [축](#axis)
+
+
+* * *
+### 축 <a id="axis"></a>
+y축의 예시를 들자.
+```python3
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+
+# 뭔가 plot을 하고 나서...
+
+ax.set_ylim(limit) # y축의 전체 range, 곧 limit을 정한다. 
+ax.set_yticks(y_tick) #  y축에 그리는 눈금을 정한다.
+```
+
+* * *
+### x축이 날짜입니다 <a id="date-tick-labels"></a>
+- [Date tick labels](https://matplotlib.org/gallery/text_labels_and_annotations/date.html#date-tick-labels)
+
 
 * * *
 ### 매번 찾는 color code <a id="color-code"></a>
@@ -83,3 +105,4 @@ plt.savefig(f, format='eps', dpi=1000)
 - [matplotlib rcParams](https://matplotlib.org/tutorials/introductory/customizing.html#matplotlib-rcparams)
 - [matplotlib.axes](https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes)
 - [matplotlib.axes.Axes.plot](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.plot.html#matplotlib-axes-axes-plot)
+- [Anatomy of a figure](https://matplotlib.org/3.1.1/gallery/showcase/anatomy.html)
