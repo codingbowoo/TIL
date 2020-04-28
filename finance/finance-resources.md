@@ -7,6 +7,9 @@
 
 - [FACTOR ALLOCATION 101: EQUAL VS VOLATILITY-WEIGHTED](https://www.factorresearch.com/research-factor-allocation-101-equal-vs-volatility-weighted)
 
+## Dataset
+- [Kenneth R. French - Data Library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html)
+
 ## Portfolio
 - [포트폴리오 이론](https://flyinglightly.tistory.com/category/%EC%9E%AC%EC%A0%95%ED%95%99)
 - [Skewness and Kurtosis](https://www.evestment.com/resources/investment-statistics-guide/assessing-skewness-and-kurtosis-in-the-returns-distribution/)
