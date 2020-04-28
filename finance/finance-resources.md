@@ -1,3 +1,6 @@
+- [AHL Explains](https://www.youtube.com/playlist?list=PLwmBa3RpZcUrebD4o1TNt3d9wplBktmdS)
+> AHL Explains is a video series that has been created to explain key concepts at Man AHL. Narrated by Dr. Anthony Ledford, Chief Scientist at Man AHL, our intention is to bring each concept to life by focusing on principles rather than detail.
+
 - [Python for finance tutorial](https://github.com/datacamp/datacamp-community-tutorials/blob/master/Python%20Finance%20Tutorial%20For%20Beginners/Python%20For%20Finance%20Beginners%20Tutorial.ipynb)
 
 - [Fama-French Research Portfolios and Factors](https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/research-guides/fama-french-research-portfolios-and-factors/#beme-book-to-market)
