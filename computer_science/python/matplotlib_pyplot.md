@@ -2,6 +2,7 @@
 
 ## Contents
 
+- [bar chart != histogram](#bar-chart)
 - [plt.savefig() 했는데 아무것도 나오지 않는다구?](#reset)
 - [smooth한 그래프를 그리고 싶습니다](#smooth-interpolate)
 - [x축이 날짜입니다](#date-tick-labels)
@@ -9,6 +10,33 @@
 - [매번 찾는 color code](#color-code)
 - [축](#axis)
 
+
+
+* * *
+### bar chart <a id="bar-chart"></a>
+내가 그려야 하는 건 bar plot이었는데, histogram을 붙잡고 씨름하고 있었다. 
+- bar chart는 각각의 columns이 categorical variable
+- histogram의 각 column은 하나의 연속한 변수의 range를 나눈 것이다.
+
+
+bar chart는 대략 아래와 같이 그린다.
+```python3
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+
+ax.bar(bar의 중심 위치, plot할 data, bar width, bar label)
+# histogram의 경우 ax.hist()를 찾아보자
+
+ax.set_ylabel()
+ax.set_title()
+ax.set_xticks()
+ax.set_xticklabels()
+ax.legend()
+
+plt.show()
+```
+- [Grouped bar chart with labels](https://matplotlib.org/3.2.1/gallery/lines_bars_and_markers/barchart.html#sphx-glr-gallery-lines-bars-and-markers-barchart-py)
 
 * * *
 ### 축 <a id="axis"></a>
