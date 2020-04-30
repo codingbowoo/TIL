@@ -5,9 +5,22 @@
 - [Built-in Magic](#magic)
 - [Config 찾기](#config-path)
 - [Kernel](#kernel)
+- [Keyboard Shortcuts](#shortcut)
 - [Markdown](#markdown)
 - [이모저모](#useful)
 
+
+* * *
+#### Keyboard Shortcuts <a id="shortcut"></a>
+1. 내장 shortcut 확인: **Help** 탭의 **Keyboard Shortcuts**<br>
+예) run current cell (```Shift```+```Enter```)<br>
+
+2. [Keyboard Shortcut customization](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Custom%20Keyboard%20Shortcuts.html#Keyboard-Shortcut-Customization)
+: **Help** 탭의 **Edit Keyboard Shortcuts**<br>
+새로운 단축키를 등록할 수 있다. 등록하는 방법은 Edit Keyboard Shortcuts 화면의 하단에 있다.<br>
+개인적으로 등록하고 쓰는 것들은 아래와 같다.
+    - ```9```,```9``` : restart kernel and run all cells 
+    - ```9```,```8``` : restart kernel and clear output 
 
 
 * * *
@@ -69,7 +82,7 @@ related to
   - 모듈이나 함수 이름 뒤에 ? 또는 ??를 붙여주면 세부 정보를 확인할 수 있다. ```help(명령어)```와 비슷한데, help의 경우 output이 나온다면 ?들은 별도의 팝업창에 내용을 보여준다. 
       - **?** : Type(ex.module), String form, Docstring, File(경로) 등의 정보를 보여준다.
       - **??** : Source를 보여준다. File위치도 알려줌.
-
+* * *
 
 
 ###### 트리비아
