@@ -1,8 +1,10 @@
 # Maximum Drawdown(MDD)
 
 **최대 낙폭**이라고 번역할 수 있는 maximum drawdown(이하 MDD)는 [1, T]의 시간동안 어떤 주식을 보유(hold)한 상태에서 발생할 수 있는 최대 손실을 의미한다. 
-[1,T]의 시계열 중 이전 최고점(peak)에서 최저점(trough)까지의 낙폭 중 최댓값이다.
+[1,T]의 시계열 중 이전 최고점(peak)에서 최저점(trough)까지의 낙폭 중 최댓값(a peak-to-trough decline during a specific period for an investment, trading account, or fund)이다.
 
+- **drawdown D(T) "at" time T**
+- **maximum drawdown "up to" time T**
 
 수익률이 series로 들어온다고 가정했을 때 mdd를 구하는 코드는 다음과 같다.
 - mdd는 price와 관련된 개념이므로 가격으로 변환하여 mdd를 구한다.
@@ -37,6 +39,8 @@ def maximum_drawdown(rtrn, get_times=False):
         return mdd, t_max, tau
 ```
 
-https://github.com/GreatYoungShaw/Calculating-maximum-drawdown 의 코드를 참고했다.
-- 위 레포와 달리 pandas Series 타입 dependent하다.
-- 특정 날짜(혹은 인덱스)를 반환하는 기능을 추가했다.
+###### resources
+- https://github.com/GreatYoungShaw/Calculating-maximum-drawdown 의 코드를 참고했다.
+    - 위 레포와 달리 pandas Series 타입 dependent하다.
+    - 특정 날짜(혹은 인덱스)를 반환하는 기능을 추가했다.
+- [Drawdown Definition and Example](https://www.investopedia.com/terms/d/drawdown.asp)
