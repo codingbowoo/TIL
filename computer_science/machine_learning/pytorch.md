@@ -27,5 +27,16 @@
     - 한국어 튜토리얼도 있다. [파이토치(PYTORCH) 튜토리얼](https://tutorials.pytorch.kr/)
 - [PyTorch Forum](https://discuss.pytorch.org/)
 
+### Tutorials on GitHub
+- [Effective PyTorch](https://github.com/vahidk/EffectivePyTorch)
+- [Paperspace/PyTorch-101-Tutorial-Series](https://github.com/Paperspace/PyTorch-101-Tutorial-Series)
+- [keon/3-min-pytorch](https://github.com/keon/3-min-pytorch)
+- [victoresque/pytorch-template](https://github.com/victoresque/pytorch-template)
+    - Python >= 3.5 (3.6 recommended), PyTorch >= 0.4 (1.2 recommended) 
+- [GunhoChoi/PyTorch-FastCampus](https://github.com/GunhoChoi/PyTorch-FastCampus)
+    - PyTorch로 시작하는 딥러닝 입문 CAMP (2017.7~2017.12) 강의자료
+    - Python 3.6, pytorch 0.3.1
+- [jcjohnson/pytorch-examples](https://github.com/jcjohnson/pytorch-examples)
+    - PyTorch 0.4
 ###### 참고자료
 - [DEEP LEARNING WITH PYTORCH](https://pytorch.org/deep-learning-with-pytorch) Chapter 1
