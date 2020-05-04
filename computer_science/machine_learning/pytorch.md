@@ -1,7 +1,3 @@
-파이토치 검색 가이드가 있었으면 좋겠다 <br>
-도큐먼트에서 찾기도 쉽지 않고.. 
-(구글링 너무 힘듦)
-
 # Pytorch
 - 여러 언어로 만들어진 라이브러리. 사용자는 Python의 쉬운 UI와 C++의 빠른 속도 모두를 향유할 수 있다.
     - python API를 호출하면 C++이나 CUDA로 구현된 코드가 돌아갈 것! 
@@ -20,6 +16,14 @@
 - 데이터를 불러오고 다루는 것은 ```torch.util.data``` (그 중 ```Dataset```, ```DataLoader``` 클래스를 많이 보게 될 것)
 - 여러 대의 기기나 GPU를 사용한다면 ```torch.nn.DataParallel```, ```torch.distributed```
 - 트레이닝을 마친 모델을 업데이트 할 때는 ```torch.optim```
+
+### TIL 목록
+- [nn.LSTM을 찾아서](https://github.com/codingbowoo/codingbowoo-resource/blob/master/computer_science/machine_learning/pytorch_internals.md)
+- [PyTorch Datasets](https://github.com/codingbowoo/codingbowoo-resource/blob/master/computer_science/machine_learning/pytorch_datasets.md)
+- [PyTorch loss function](https://github.com/codingbowoo/codingbowoo-resource/blob/master/computer_science/machine_learning/pytorch_loss_func.md)
+- [Tensorboard in PyTorch](https://github.com/codingbowoo/codingbowoo-resource/blob/master/computer_science/machine_learning/pytorch_tensorboard.md)
+- [TensorDataset and DataLoader](https://github.com/codingbowoo/codingbowoo-resource/blob/master/computer_science/machine_learning/pytorch_dataloader.md)
+
 
 ### 관련 사이트
 - PyTorch [Get Started](https://pytorch.org/get-started/locally/)
