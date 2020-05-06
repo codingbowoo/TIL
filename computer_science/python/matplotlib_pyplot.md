@@ -9,8 +9,15 @@
 - [매번 plot 그릴 때마다 너무 헤매서 적어두는 (나름) template](#template)
 - [매번 찾는 color code](#color-code)
 - [축](#axis)
+- [한 화면에 여러 그래프를 그리고 싶어요](#subplot)
 
 
+* * *
+### 한 화면에 여러 그래프 그리기 <a id="subplot"></a>
+
+아래 두 문서 확인하기 (from matplotlib documentation)
+- [Creating multiple subplots using plt.subplot](https://matplotlib.org/3.1.0/gallery/subplots_axes_and_figures/subplots_demo.html#creating-multiple-subplots-using-plt-subplot)
+- [Nested Gridspecs](https://matplotlib.org/3.2.1/gallery/subplots_axes_and_figures/gridspec_nested.html#nested-gridspecs)
 
 * * *
 ### bar chart <a id="bar-chart"></a>
