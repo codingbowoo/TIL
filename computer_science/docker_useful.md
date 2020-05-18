@@ -2,7 +2,20 @@
 
 - [container 생성](#container)
 - [jupyter notebook 만들기](#make-jupyter)
+- [실행 중 container에 포트 추가하기](#add-port-to-running-container)
 - [포트 포워딩](#port-forward)
+
+## 실행 중 container에 포트 추가하기 <a id="add-port-to-running-container"></a>
+1. 실행중인 컨테이너를 종료 
+    - ```docker stop (컨테이너 이름)```
+2. 현재 상태를 이미지로 만든다/ commit으로 수정사항 반영 
+    - ```docker commit (컨테이너 이름) (이미지 이름)```
+    - ```docker rm (컨테이너 이름)```
+    
+3. 해당 이미지 실행 시 포트 추가하기
+- [image에 수정사항이 있는 경우](https://medium.com/sjk5766/%EC%8B%A4%ED%96%89%EC%A4%91%EC%9D%B8-container%EC%97%90-port-or-volume-%EC%B6%94%EA%B0%80-ae8889344c68)
+
+
 
 ## container 생성 <a id="container"></a>
 ```bash
