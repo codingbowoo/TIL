@@ -4,10 +4,20 @@
 ##### Contents
 - [Built-in Magic](#magic)
 - [Config 찾기](#config-path)
+- [InteractiveShell](#interactiveshell)
 - [Kernel](#kernel)
 - [Keyboard Shortcuts](#shortcut)
 - [Markdown](#markdown)
 - [이모저모](#useful)
+
+* * *
+#### InteractiveShell <a id="interactiveshell"></a>
+아래 내용을 추가하면 Out[#]: 를 여러 개 확인할 수 있다. 
+
+```python3
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
+```
 
 
 * * *
