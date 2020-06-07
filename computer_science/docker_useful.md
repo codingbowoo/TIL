@@ -1,9 +1,15 @@
 나도 이제 도커 사람! 동료들이 도커 이렇게 쓰면 돼! 하고 알려준 명령어들 모아두고 무슨 말인지 알아들어보자..!
 
 - [container 생성](#container)
+- [docker mount가 안돼요](#no-mount)
 - [jupyter notebook 만들기](#make-jupyter)
 - [실행 중 container에 포트 추가하기](#add-port-to-running-container)
 - [포트 포워딩](#port-forward)
+
+
+
+## docker mount가 안돼요 <a id="no-mount"></a>
+https://github.com/moby/moby/issues/34532#issuecomment-322738970
 
 ## 실행 중 container에 포트 추가하기 <a id="add-port-to-running-container"></a>
 1. 실행중인 컨테이너를 종료 
