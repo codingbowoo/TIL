@@ -1,11 +1,11 @@
 # Introduction
 
 ## Security Goals
-- Confidentiality (Protecting confidential informtaion)
+- **Confidentiality** (Protecting confidential informtaion)
     - Snooping, Traffic analysis
-- Integrity (Information to be changed constantly, change only made by authorized entities & mechanisms)
+- **Integrity** (Information to be changed constantly, change only made by authorized entities & mechanisms)
     - Modification, Masquerading, Replaying, Repudiation(sender of receiver later deny that she has sent/received the message)
-- Availability (Information should be available to authorized entities)
+- **Availability** (Information should be available to authorized entities)
     - Denial of service
     
 ## Services and Mechanisms
@@ -28,4 +28,12 @@
 
 ## Techniques
 ### Cryptography
+- "secret writing"
+- Encryption/Decryption: conceal the contents of a message by enciphering
+- Symmetric encipherment: single secret key
+- Asymmetric encipherment: one public key & one private key
+- Hashing: from variable-length to fixed-length message
+
 ### Steganography
+- "covered writing"
+- "conceling the message itself by covering it with something else"
