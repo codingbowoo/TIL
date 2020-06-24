@@ -2,8 +2,8 @@
 
 ## 2.1 Integer arithmetic
 - **set** as a background for modular arithmetic
-- binary operation: two inputs & one ouput ```a (operation e.g. +, -, *) b = c```
-- integer division : ```a = q * n + r```
+- Binary Operation: two inputs & one ouput ```a (operation e.g. +, -, *) b = c```
+- Integer Division : ```a = q * n + r```
     - a: dividend
     - n: divisor (must be a positive number)
     - q: quotient
@@ -28,5 +28,27 @@
     
 
 ## 2.2 Modular arithmetic
-- &equiv;	
+- Modulo Operator: ```mod```, Integer Division ```a = q * n + r``` 중 ```n```: modulus(positive), ```r```: residue(nonnegative)
+- Set of Residue: the set of least residues modulo n, ```Z_n = {0, 1, 2, 3, ..., (n-1)}```(size: n)
+- Congruence (**&equiv;**), **congruent** modulo n: have the same residue for the modulus n
+    - Residue Classes: ```[a]```, ```[a]_n``` : the set of integers congruent modulo n
+    - Circular Notation: a &equiv; 2 (mod n)
+- Operation in Z_n
+    - Property 1: (a + b) mod n = [(a mod n) + (b mod n)] mod n
+    - Property 2: (a - b) mod n = [(a mod n) - (b mod n)] mod n
+    - Property 3: (a * b) mod n = [(a mod n) * (b mod n)] mod n
+        - 10^n mod x = (10 mod x)^n 
+        - an integer divided by 3 is the same as the remainder of the sum of its decimal digits
+- Inverses
+    - Additive Inverse: **a + b &equiv; 0 (mod n)**, each integer has an additive inverse
+        - The sum of an integer and its additive inverse is congruent to 0 modulo n.
+    - Multiplicative Inverse: **a * b &equiv; 1 (mod n)**, an integer may or may not have a multiplicative inverse
+        - The product of the integer and its multiplicative inverse is congruent to 1 modulo n.
+        - the multiplicative inverse of ```b``` in ```Z_n``` can be found using the extended Euclidean algorithm
+            - when ```n``` and ```b``` are given and **gcd(n, b) &equiv; 1**
+            - ```(s * n) + (t * b) = 1```, t is the inverse of b
+- Addition and Multiplication Tables 이라는 것이 있다. addition table의 0은 additive inverse를 보여주고 multiplication table의 1은 multiplicative inverse를 보여준다.
+= Different Sets for Addition and Multiplication
+    - ```Z_n```(additive inverse needed) and ```Z_p```(multiplicative inverses are needed)
+    - ```Z_p``` and ```Z_p*```(prime number only)
     
