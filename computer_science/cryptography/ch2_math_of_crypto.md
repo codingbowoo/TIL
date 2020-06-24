@@ -52,3 +52,21 @@
     - ```Z_n```(additive inverse needed) and ```Z_p```(multiplicative inverses are needed)
     - ```Z_p``` and ```Z_p*```(prime number only)
     
+## 2.3 Matrices
+- Matrix Equality, Addition, Subtraction, Multiplication
+- **Determinant**: ```det(A)``` where A is a square matrix of size m * m
+    - Multiplicative inverse exists only if the det(A) has a multiplicative inverse in the corresponding set
+- Residue Matrices: matrices where all elements are in ```Z_n```
+    - Multiplicative inverse exists if gcd(det(A), n) = 1.
+    - Scalar Multiplication 가능, Congruence A &equiv; B if a_ij &equiv; b_ij for all i's and j's
+
+## 2.4 Linear Congruence
+- Single-Variable Linear Equations
+    - **ax &equiv; b (mod n)** : if ```d|b```, there are d solutions. if not, there's no solution.
+        1. Reduce the equation by dividing both sides including the modulus. 
+        2. Multiply both sides of the reduced equation by inverse of a to find the particular solution
+        3. The general solutions are ```x = x_0 + (n/d)k``` for k = 0, 1, 2, ..., (d-1).
+- Set of Linear Equations
+    1. Equations
+    2. Interpretation
+    3. Solution
