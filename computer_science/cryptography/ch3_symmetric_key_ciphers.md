@@ -28,10 +28,15 @@
     - Vigenere Cipher: ```C_i = P_i + k_i```
         - depend only on the position of the character in P
         - vulnerable to the use Kasiski test(searches for repeated text segments) to find the key length & brute-force
-    - Hill Cipher
-        - 
+    - Hill Cipher : ```C_m = P_1*k_1m + ... + P_i*k_im + ...+ P_m*k_mm``` (```m```: size of the block )
+        - plaintext divided into equal-size blocks
+        - Each clock is encrytped one at a time
+        - multiplicative inverse for the key matrix needed
+        - frequency analysis disabled, known-plaintext attack available if the value ```m``` and plaintext/cipher text pairs are known.
     - One-Time Pad
-    - Rotor Cipher
+        - "perfect secrecy can be achieved if each plaintext symbol is encrypted with a key randomly chosen from a key domain"
+        - key length = plaintext length
+        - key chosen in complete random
 
 ## Transposition Ciphers
 - Keyless Transposition Ciphers
