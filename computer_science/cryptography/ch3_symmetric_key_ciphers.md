@@ -29,6 +29,7 @@
         - depend only on the position of the character in P
         - vulnerable to the use Kasiski test(searches for repeated text segments) to find the key length & brute-force
     - Hill Cipher
+        - 
     - One-Time Pad
     - Rotor Cipher
 
