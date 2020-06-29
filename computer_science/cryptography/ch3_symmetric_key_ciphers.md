@@ -50,7 +50,7 @@
     - Double transposition cipher(e.g. (Plaintext) -> write row by row -> permute columns -> read col by col -> (Middle-text) -> write row by row -> permute columns -> read column by column -> ciphertext)
 
 ## Stream and Block Ciphers
-**Two categoris of the traditional symmetric ciphers: stream ciphers and block ciphers**
+**Two categories of the traditional symmetric ciphers: stream ciphers and block ciphers**
 - Stream Ciphers: encryption and decryption are done one symbol at a time 
     - P(plaintext), C(ciphertext), K(key stream)
     - key stream might diverse: 1) predetermined 2) depend on P/C/previous key values
