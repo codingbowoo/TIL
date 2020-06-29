@@ -39,9 +39,15 @@
         - key chosen in complete random
 
 ## Transposition Ciphers
+**changes the location of the symbols/ reorders symbols** <br>
+**vulnerable to several ciphertext-only attacks**(e.g. statistical attack(frequency), brute-force attack)
 - Keyless Transposition Ciphers
+    - written into a table 1) column by column and transmitted row by row 2) row by row and transmitted column by column
 - Keyed Transposition Ciphers
+    - permutation is done on the whold plaintxt to create the whole ciphertext
+    - key used for encryption and decryption (matrices can be used as a representation of the key)
 - Combining Two Approaches
+    - Double transposition cipher(e.g. (Plaintext) -> write row by row -> permute columns -> read col by col -> (Middle-text) -> write row by row -> permute columns -> read column by column -> ciphertext)
 
 ## Stream and Block Ciphers
 - Stream Ciphers
