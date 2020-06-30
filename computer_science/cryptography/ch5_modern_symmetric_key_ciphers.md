@@ -31,9 +31,30 @@
      - Differential Cryptanalysis: chosen-plaintext attacks
      - Linear Crytanalysis: known-olaintext attacks
      - Linear Approximation
-     
-     
-    
-
-
+  
 ## Modern Stream Ciphers
+**encryption and decryption are done r bits at a time** <br>
+**plaintext bit stream P, ciphertext bit stream C, key bit stream K where p_i, c_i, k_i are ```r```-bit**
+- Encryption = c_i = E(k_i, p_i)
+- Decryption = p_i = D(k_i, c_i)
+
+<br>
+
+- Stream ciphers are faster than block ciphers.
+- **how to generate the key stream K matters**
+
+### Synchronous Stream Ciphers
+- key is independent of the P or C
+- the simplest and the most secure : **one-time pad**
+    - key stream randomly chosen foe each encipherment
+    - ```p_i``` -> Encryption with random sequence bit generator -> ```c_i```(Insecure channel) -> decryption with secure key-exchange channel -> ```p_i```
+- **feedback shift register (FSR)**
+    - linear feedback shift register (LFSR) 
+        - c_i = 1 일 때 feedback function의 일부
+        - key stream seq. is periodic: the maximum period of asn LFSR: ```2^m```-1
+        - feedback function == characteristic polynomial with coefficients in the GF(2) field
+        - LFSR with maximum period && even number of cellsand the characteristic polynomial ==> primitive polynomial (irreducible
+    - nonlinear feedback shift register (NLFSR)
+        
+### Nonsynchronous Stream Ciphers
+**each key in the key stream depends on precious P or C** 
