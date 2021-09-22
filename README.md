@@ -10,3 +10,7 @@
 lisabowoo at gmail dot com <br>
 bowoojang at sogang dot ac dot kr <br>
 bowoo.jang at idk2 dot co dot kr <br>
+
+
+## GitHub Stats
+![Github Stats](https://github-readme-stats.vercel.app/api?username=codingbowoo&hide_title=true&show_icons=true&include_all_commits=true&disable_animations=true)
