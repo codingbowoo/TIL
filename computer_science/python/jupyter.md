@@ -8,6 +8,7 @@
 - [Kernel](#kernel)
 - [Keyboard Shortcuts](#shortcut)
 - [Markdown](#markdown)
+- [Markdown 표 정렬](#markdown-table-align)
 - [두 개 이상의 Out\[\]:을 원해](#interactiveshell)
 - [이모저모](#useful)
 
@@ -87,6 +88,39 @@ related to
 related to
 - [jupyter notebook markdown](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html)
  
+* * *
+#### Markdown 표 정렬<a id="markdown-table-align"></a>
+- 셀 안의 텍스트 정렬 말고, 표 전체를 정렬하고 싶을 때는 div elements와 inline HTML을 활용해 버리는 수도 있다. 
+- 주피터 파이썬 코드 셀에 아래와 같이 입력해주고
+```python
+from IPython.display import HTML
+
+style="""
+<style>
+.tbalign table {
+  width:75%; 
+  margin-left:0%;
+  margin-right:25%;
+}
+</style>
+"""
+
+HTML(style)
+```
+
+- 마크댜운 셀에 div element를 쓰면 완성! 
+```markdown
+<div class="tbalign">
+    
+|ID|이름|
+|:------:|:-----:|
+|1|어쩌구|
+|2|저쩌구|
+</div>
+```
+
+- [Set table column width via Markdown](https://stackoverflow.com/questions/36121672/set-table-column-width-via-markdown/51701842)
+
 * * * 
 
 #### 이모저모 <a id="useful"></a>
