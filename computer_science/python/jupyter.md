@@ -4,6 +4,7 @@
 ##### Contents
 - [Built-in Magic](#magic)
 - [Config 찾기](#config-path)
+- [HTML 추출 시 코드 숨기기](#no-code-html)
 - [InteractiveShell](#interactiveshell)
 - [Kernel](#kernel)
 - [Keyboard Shortcuts](#shortcut)
@@ -11,6 +12,16 @@
 - [Markdown 표 정렬](#markdown-table-align)
 - [두 개 이상의 Out\[\]:을 원해](#interactiveshell)
 - [이모저모](#useful)
+
+* * *
+#### HTML 추출 시 코드 숨기기 <a id="no-code-html"></a>
+아래 내용을 추가하면 Out[#]: 를 여러 개 확인할 수 있다. 
+html 파일 생성 시 code를 삭제하려면 (고객 공유용이라든지)...
+1. terminal 열기
+2. `jupyter_contrib_nbextensions` 깔려있는 kernel 활성화(conda activate 가상환경이름)
+3. `jupyter nbconvert 노트북파일명.ipynb --to=html --no-input`
+    - 여기서 --no-input 옵션이 코드를 숨기는 부분! print 결과나 Out[]: 결과만 남는다.
+    - `--to=html` 옵션의 경우 `--to=pdf` 등으로 변경할 수 있다. 
 
 * * *
 #### InteractiveShell <a id="interactiveshell"></a>
