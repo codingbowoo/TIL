@@ -84,12 +84,13 @@ related to
 #### Kernel<a id="kernel"></a>
 - jupyter kernel을 가장 간단하게 눈으로 확인해볼 수 있는 명령어는 ```jupyter kernelspec list```이다. <br> 주피터 노트북  Files 탭 화면의 우측 상단에, 새로운 file을 생성할 수 있는 *New ▼* 드롭다운 메뉴 안의 **Notebook:** 선택지가 바로 kernel 선택을 의미함을 확인할 수 있다. 현재로는 **독립적인 개발환경** 쯤으로 이해하고 있다.
 - 독립적인 개발환경이라 함은 가상환경의 존재 이유가 아닐까... 역시나 특정 가상환경에서 ipython 사용하는 방법을 찾아보니 [Installing the IPython kernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html#installing-the-ipython-kernel) 이라는 문서가 있었고, 나는 그 중 [Kernels for different environments](https://ipython.readthedocs.io/en/stable/install/kernel_install.html#kernels-for-different-environments) 항목의 도움을 받았다. <br>
-우선 ```ipythonkernel``` 패키지를 설치하고, 원하는 가상환경을 activate 한 상태의 prompt에
+우선 ```ipykernel``` 패키지를 설치(`conda install ipykernel`)하고, 원하는 가상환경을 activate 한 상태의 prompt에
     ```shell
-    python -m ipykernel install --user --name (내 가상환경 이름) --display-name "(주피터 노트북에서 확인할 이름)" 
+    ipython kernel install --user --name (내 가상환경 이름) --display-name "(주피터 노트북에서 확인할 이름)" 
     ```
     명령어를 입력해주면 짜잔. 앞서 언급한 *New ▼* 드롭다운 메뉴 안의 **Notebook:** 선택지에서 내 가상환경 kernel을 확인할 수 있다.
 - prompt에  ```jupyter kernelspec remove (없애고 싶은 커널 이름)``` 또는 ```jupyter kernelspec uninstall (없애고 싶은 커널 이름)``` 명령어를 사용해서 kernel을 없앨 수도 있다. 
+- 위 내용이 통하지 않을 때 직접 만드는 방법은 https://yahwang.github.io/posts/42 를 참고하자
     
 * * *
 #### Markdown<a id="markdown"></a>
